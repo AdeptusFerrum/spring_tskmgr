@@ -12,20 +12,26 @@ import com.example.taskmanager.repository.UserRepository;
 import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
 @Service
+@Transactional
 public class TaskService {
 
     private final TaskRepository taskRepository;
     private final UserRepository userRepository;
+    private final AuditService auditService;
 
-    public TaskService(TaskRepository taskRepository, UserRepository userRepository) {
+    public TaskService(TaskRepository taskRepository,
+                       UserRepository userRepository,
+                       AuditService auditService) {
         this.taskRepository = taskRepository;
         this.userRepository = userRepository;
+        this.auditService = auditService;
     }
 
     private User currentUser() {
@@ -34,6 +40,7 @@ public class TaskService {
                 .orElseThrow(() -> new RuntimeException("Current user not found"));
     }
 
+    @Transactional(readOnly = true)
     public List<TaskResponse> getAll(String status, String priority) {
         User user = currentUser();
 
@@ -48,23 +55,35 @@ public class TaskService {
             tasks = taskRepository.findAll();
         }
 
-        // USER видит только свои, ADMIN — все
         if (user.getRole().name().equals("ROLE_USER")) {
-            tasks = tasks.stream().filter(t -> t.getOwner() != null && t.getOwner().getId().equals(user.getId())).toList();
+            tasks = tasks.stream()
+                    .filter(t -> t.getOwner() != null && t.getOwner().getId().equals(user.getId()))
+                    .toList();
         }
 
         return tasks.stream().map(this::toResponse).toList();
     }
 
+    @Transactional(readOnly = true)
     public List<TaskResponse> getMy() {
         User user = currentUser();
         return taskRepository.findAllByOwner(user).stream().map(this::toResponse).toList();
     }
 
+    @Transactional(readOnly = true)
     public TaskResponse getById(Long id) {
         Task task = taskRepository.findById(id).orElseThrow(() -> new TaskNotFoundException(id));
         checkOwnership(task);
         return toResponse(task);
+    }
+
+    @Transactional(readOnly = true)
+    public Map<String, Long> getStats() {
+        Map<String, Long> stats = new LinkedHashMap<>();
+        for (Status s : Status.values()) {
+            stats.put(s.name(), taskRepository.findByStatus(s).stream().count());
+        }
+        return stats;
     }
 
     public TaskResponse create(TaskRequest request) {
@@ -74,7 +93,9 @@ public class TaskService {
         task.setPriority(request.getPriority());
         task.setStatus(Status.NEW);
         task.setOwner(currentUser());
-        return toResponse(taskRepository.save(task));
+        Task saved = taskRepository.save(task);
+        auditService.logAction("CREATE", saved.getId());
+        return toResponse(saved);
     }
 
     public TaskResponse update(Long id, TaskRequest request) {
@@ -96,15 +117,8 @@ public class TaskService {
     public void delete(Long id) {
         Task task = taskRepository.findById(id).orElseThrow(() -> new TaskNotFoundException(id));
         checkOwnership(task);
+        auditService.logAction("DELETE", id);
         taskRepository.deleteById(id);
-    }
-
-    public Map<String, Long> getStats() {
-        Map<String, Long> stats = new LinkedHashMap<>();
-        for (Status s : Status.values()) {
-            stats.put(s.name(), taskRepository.findByStatus(s).stream().count());
-        }
-        return stats;
     }
 
     private void checkOwnership(Task task) {

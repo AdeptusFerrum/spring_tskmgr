@@ -1,6 +1,7 @@
 package com.example.taskmanager.model;
 
 import jakarta.persistence.*;
+import java.time.LocalDateTime;
 
 @Entity
 @Table(name = "tasks")
@@ -27,6 +28,10 @@ public class Task {
     @JoinColumn(name = "owner_id")
     private User owner;
 
+    @Column(name = "created_at")
+    private LocalDateTime createdAt;
+
+
     public Task() {
     }
 
@@ -47,4 +52,7 @@ public class Task {
 
     public User getOwner() { return owner; }
     public void setOwner(User owner) { this.owner = owner; }
+
+    public LocalDateTime getCreatedAt() { return createdAt; }
+    public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }
 }
