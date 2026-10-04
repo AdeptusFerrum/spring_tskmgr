@@ -23,6 +23,10 @@ public class Task {
     @Column(nullable = false)
     private Status status;
 
+    @ManyToOne
+    @JoinColumn(name = "owner_id")
+    private User owner;
+
     public Task() {
     }
 
@@ -40,4 +44,7 @@ public class Task {
 
     public Status getStatus() { return status; }
     public void setStatus(Status status) { this.status = status; }
+
+    public User getOwner() { return owner; }
+    public void setOwner(User owner) { this.owner = owner; }
 }

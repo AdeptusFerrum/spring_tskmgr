@@ -7,6 +7,7 @@ import com.example.taskmanager.service.TaskService;
 import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -28,10 +29,17 @@ public class TaskController {
             @RequestParam(required = false) String priority) {
         return taskService.getAll(status, priority);
     }
+
+    @GetMapping("/my")
+    public List<TaskResponse> getMy() {
+        return taskService.getMy();
+    }
+
     @GetMapping("/stats")
     public Map<String, Long> getStats() {
         return taskService.getStats();
     }
+
     @GetMapping("/{id}")
     public TaskResponse getById(@PathVariable Long id) {
         return taskService.getById(id);
@@ -54,6 +62,7 @@ public class TaskController {
     }
 
     @DeleteMapping("/{id}")
+    @PreAuthorize("hasRole('ADMIN')")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         taskService.delete(id);
         return ResponseEntity.noContent().build();
