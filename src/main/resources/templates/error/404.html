@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>404 — Не найдено</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<div class="container" style="max-width:600px;text-align:center;margin-top:100px">
+    <div class="card">
+        <h1 style="font-size:72px;color:#3182ce;margin-bottom:8px">404</h1>
+        <h2 style="margin-bottom:16px">Страница не найдена</h2>
+        <p style="color:#718096;margin-bottom:24px">
+            Такой страницы не существует или она была удалена.
+        </p>
+        <a th:href="@{/web/tasks}" class="btn btn-primary">← К списку задач</a>
+    </div>
+</div>
+</body>
+</html>

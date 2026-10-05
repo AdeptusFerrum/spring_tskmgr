@@ -3,15 +3,18 @@ package com.example.taskmanager.dto;
 import com.example.taskmanager.model.Priority;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 
 public class TaskRequest {
 
-    @NotBlank(message = "Title must not be blank")
+    @NotBlank(message = "Название не может быть пустым")
+    @Size(max = 255, message = "Название не может быть длиннее 255 символов")
     private String title;
 
+    @Size(max = 2000, message = "Описание не может быть длиннее 2000 символов")
     private String description;
 
-    @NotNull(message = "Priority is required")
+    @NotNull(message = "Приоритет обязателен")
     private Priority priority;
 
     public String getTitle() { return title; }

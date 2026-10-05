@@ -20,13 +20,18 @@ public class DataInitializer implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        if (userRepository.findByEmail("admin@test.com").isEmpty()) {
-            User admin = new User();
-            admin.setEmail("admin@test.com");
-            admin.setPassword(passwordEncoder.encode("admin123"));
-            admin.setRole(Role.ROLE_ADMIN);
-            userRepository.save(admin);
-            System.out.println(">>> Admin created: admin@test.com / admin123");
+        createIfMissing("admin@test.com", "admin123", Role.ROLE_ADMIN);
+        createIfMissing("user@test.com", "pass123", Role.ROLE_USER);
+    }
+
+    private void createIfMissing(String email, String rawPassword, Role role) {
+        if (userRepository.findByEmail(email).isEmpty()) {
+            User user = new User();
+            user.setEmail(email);
+            user.setPassword(passwordEncoder.encode(rawPassword));
+            user.setRole(role);
+            userRepository.save(user);
+            System.out.println(">>> Created " + role + ": " + email + " / " + rawPassword);
         }
     }
 }

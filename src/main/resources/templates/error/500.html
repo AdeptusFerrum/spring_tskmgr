@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>500 — Ошибка сервера</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<div class="container" style="max-width:600px;text-align:center;margin-top:100px">
+    <div class="card">
+        <h1 style="font-size:72px;color:#e53e3e;margin-bottom:8px">500</h1>
+        <h2 style="margin-bottom:16px">Что-то пошло не так</h2>
+        <p style="color:#718096;margin-bottom:24px">
+            Внутренняя ошибка сервера. Попробуйте позже.
+        </p>
+        <a th:href="@{/web/tasks}" class="btn btn-primary">← На главную</a>
+    </div>
+</div>
+</body>
+</html>

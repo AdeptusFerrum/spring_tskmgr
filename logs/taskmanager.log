@@ -1,0 +1,233 @@
+2026-10-05T14:44:49.324+03:00  INFO 30884 --- [taskmanager] [main] c.e.taskmanager.TaskmanagerApplication   : Starting TaskmanagerApplication using Java 21.0.10 with PID 30884 (C:\Users\Виталий\Desktop\taskmanager\target\classes started by Виталий in C:\Users\Виталий\Desktop\taskmanager)
+2026-10-05T14:44:49.326+03:00  INFO 30884 --- [taskmanager] [main] c.e.taskmanager.TaskmanagerApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-10-05T14:44:50.108+03:00  INFO 30884 --- [taskmanager] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-05T14:44:50.162+03:00  INFO 30884 --- [taskmanager] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 47 ms. Found 4 JPA repository interfaces.
+2026-10-05T14:44:50.689+03:00  INFO 30884 --- [taskmanager] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-05T14:44:50.700+03:00  INFO 30884 --- [taskmanager] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-05T14:44:50.701+03:00  INFO 30884 --- [taskmanager] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-05T14:44:50.744+03:00  INFO 30884 --- [taskmanager] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1389 ms
+2026-10-05T14:44:51.029+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Scanning for classpath resources at 'classpath:db/callback' ...
+2026-10-05T14:44:51.029+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Determining location urls for classpath:db/callback using ClassLoader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+jdk.internal.loader.ClassLoaders$AppClassLoader@3fee733d
+ ...
+2026-10-05T14:44:51.029+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Unable to resolve location classpath:db/callback.
+2026-10-05T14:44:51.029+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Scanning for classpath resources at 'classpath:db/migration' ...
+2026-10-05T14:44:51.029+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Determining location urls for classpath:db/migration using ClassLoader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+jdk.internal.loader.ClassLoaders$AppClassLoader@3fee733d
+ ...
+2026-10-05T14:44:51.030+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Scanning URL: file:/C:/Users/%d0%92%d0%b8%d1%82%d0%b0%d0%bb%d0%b8%d0%b9/Desktop/taskmanager/target/classes/db/migration
+2026-10-05T14:44:51.031+03:00 DEBUG 30884 --- [taskmanager] [main] i.s.c.FileSystemClassPathLocationScanner : Scanning starting at classpath root in filesystem: C:\Users\Виталий\Desktop\taskmanager\target\classes\
+2026-10-05T14:44:51.031+03:00 DEBUG 30884 --- [taskmanager] [main] i.s.c.FileSystemClassPathLocationScanner : Scanning for resources in path: C:\Users\Виталий\Desktop\taskmanager\target\classes\db\migration (db/migration)
+2026-10-05T14:44:51.033+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Found resource: db/migration/V1__create_tables.sql
+2026-10-05T14:44:51.033+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Found resource: db/migration/V2__add_created_at_to_tasks.sql
+2026-10-05T14:44:51.033+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Found resource: db/migration/V3__create_refresh_tokens.sql
+2026-10-05T14:44:51.033+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Scanning for classes at classpath:db/migration
+2026-10-05T14:44:51.035+03:00  INFO 30884 --- [taskmanager] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-05T14:44:51.167+03:00  INFO 30884 --- [taskmanager] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:taskdb user=SA
+2026-10-05T14:44:51.169+03:00  INFO 30884 --- [taskmanager] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-05T14:44:51.179+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.resource.ResourceNameValidator   : Validating V2__add_created_at_to_tasks.sql
+2026-10-05T14:44:51.180+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.resource.ResourceNameValidator   : Validating V3__create_refresh_tokens.sql
+2026-10-05T14:44:51.180+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.resource.ResourceNameValidator   : Validating V1__create_tables.sql
+2026-10-05T14:44:51.203+03:00  INFO 30884 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:taskdb (H2 2.4)
+2026-10-05T14:44:51.203+03:00 DEBUG 30884 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : Database Type: H2
+2026-10-05T14:44:51.203+03:00 DEBUG 30884 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : Driver: H2 JDBC Driver 2.4.240 (2025-09-22)
+2026-10-05T14:44:51.204+03:00 DEBUG 30884 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : DDL Transactions Supported: false
+2026-10-05T14:44:51.205+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.SchemaHistoryFactory           : Schemas: 
+2026-10-05T14:44:51.205+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.SchemaHistoryFactory           : Default schema: null
+2026-10-05T14:44:51.208+03:00  WARN 30884 --- [taskmanager] [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.4.240 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.3.232.
+2026-10-05T14:44:51.209+03:00 DEBUG 30884 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : Scanning for script callbacks ...
+2026-10-05T14:44:51.211+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.c.SqlScriptCallbackFactory       : Scanning for SQL callbacks ...
+2026-10-05T14:44:51.217+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.command.DbValidate     : Validating migrations ...
+2026-10-05T14:44:51.219+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.a.c.ClassicConfiguration           : CherryPickConfigurationExtension not found
+2026-10-05T14:44:51.244+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V2__add_created_at_to_tasks.sql (filename: V2__add_created_at_to_tasks.sql)
+2026-10-05T14:44:51.244+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V3__create_refresh_tokens.sql (filename: V3__create_refresh_tokens.sql)
+2026-10-05T14:44:51.245+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V1__create_tables.sql (filename: V1__create_tables.sql)
+2026-10-05T14:44:51.245+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V2__add_created_at_to_tasks.sql (filename: V2__add_created_at_to_tasks.sql)
+2026-10-05T14:44:51.245+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V3__create_refresh_tokens.sql (filename: V3__create_refresh_tokens.sql)
+2026-10-05T14:44:51.245+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V1__create_tables.sql (filename: V1__create_tables.sql)
+2026-10-05T14:44:51.246+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V2__add_created_at_to_tasks.sql (filename: V2__add_created_at_to_tasks.sql)
+2026-10-05T14:44:51.247+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V3__create_refresh_tokens.sql (filename: V3__create_refresh_tokens.sql)
+2026-10-05T14:44:51.247+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V1__create_tables.sql (filename: V1__create_tables.sql)
+2026-10-05T14:44:51.247+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V2__add_created_at_to_tasks.sql (filename: V2__add_created_at_to_tasks.sql)
+2026-10-05T14:44:51.247+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V3__create_refresh_tokens.sql (filename: V3__create_refresh_tokens.sql)
+2026-10-05T14:44:51.247+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V1__create_tables.sql (filename: V1__create_tables.sql)
+2026-10-05T14:44:51.249+03:00  INFO 30884 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-10-05T14:44:51.251+03:00  INFO 30884 --- [taskmanager] [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.034s)
+2026-10-05T14:44:51.253+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.command.DbSchemas      : Skipping creation of existing schema: "PUBLIC"
+2026-10-05T14:44:51.257+03:00  INFO 30884 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-10-05T14:44:51.260+03:00 DEBUG 30884 --- [taskmanager] [main] o.flywaydb.core.internal.parser.Parser   : Parsing  ...
+2026-10-05T14:44:51.269+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 1: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+2026-10-05T14:44:51.270+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 14: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+2026-10-05T14:44:51.271+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+2026-10-05T14:44:51.279+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T14:44:51.280+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+2026-10-05T14:44:51.281+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T14:44:51.282+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Created Schema History table "PUBLIC"."flyway_schema_history"
+2026-10-05T14:44:51.285+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.a.c.ClassicConfiguration           : CherryPickConfigurationExtension not found
+2026-10-05T14:44:51.290+03:00  INFO 30884 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-10-05T14:44:51.291+03:00 DEBUG 30884 --- [taskmanager] [main] o.flywaydb.core.internal.parser.Parser   : Parsing V1__create_tables.sql ...
+2026-10-05T14:44:51.294+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 1: CREATE TABLE users (
+                       id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                       email VARCHAR(255) NOT NULL UNIQUE,
+                       password VARCHAR(255) NOT NULL,
+                       role VARCHAR(50) NOT NULL
+)
+2026-10-05T14:44:51.295+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 8: CREATE TABLE tasks (
+                       id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                       title VARCHAR(255) NOT NULL,
+                       description VARCHAR(255),
+                       priority VARCHAR(50) NOT NULL,
+                       status VARCHAR(50) NOT NULL DEFAULT 'NEW',
+                       owner_id BIGINT,
+                       CONSTRAINT fk_tasks_owner FOREIGN KEY (owner_id) REFERENCES users(id)
+)
+2026-10-05T14:44:51.296+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 18: CREATE TABLE audit_logs (
+                            id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                            action VARCHAR(255) NOT NULL,
+                            task_id BIGINT,
+                            created_at TIMESTAMP NOT NULL
+)
+2026-10-05T14:44:51.296+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 25: INSERT INTO tasks (title, description, priority, status)
+VALUES ('Изучить Flyway', 'Первая миграция', 'HIGH', 'NEW'),
+       ('Написать тесты', 'Потом', 'MEDIUM', 'NEW')
+2026-10-05T14:44:51.298+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Starting migration of schema "PUBLIC" to version "1 - create tables" ...
+2026-10-05T14:44:51.299+03:00  INFO 30884 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - create tables"
+2026-10-05T14:44:51.300+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE users (
+                       id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                       email VARCHAR(255) NOT NULL UNIQUE,
+                       password VARCHAR(255) NOT NULL,
+                       role VARCHAR(50) NOT NULL
+)
+2026-10-05T14:44:51.304+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T14:44:51.304+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE tasks (
+                       id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                       title VARCHAR(255) NOT NULL,
+                       description VARCHAR(255),
+                       priority VARCHAR(50) NOT NULL,
+                       status VARCHAR(50) NOT NULL DEFAULT 'NEW',
+                       owner_id BIGINT,
+                       CONSTRAINT fk_tasks_owner FOREIGN KEY (owner_id) REFERENCES users(id)
+)
+2026-10-05T14:44:51.308+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T14:44:51.308+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE audit_logs (
+                            id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                            action VARCHAR(255) NOT NULL,
+                            task_id BIGINT,
+                            created_at TIMESTAMP NOT NULL
+)
+2026-10-05T14:44:51.309+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T14:44:51.309+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: INSERT INTO tasks (title, description, priority, status)
+VALUES ('Изучить Flyway', 'Первая миграция', 'HIGH', 'NEW'),
+       ('Написать тесты', 'Потом', 'MEDIUM', 'NEW')
+2026-10-05T14:44:51.309+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 2 rows affected
+2026-10-05T14:44:51.309+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Successfully completed migration of schema "PUBLIC" to version "1 - create tables"
+2026-10-05T14:44:51.312+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+2026-10-05T14:44:51.313+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.a.c.ClassicConfiguration           : CherryPickConfigurationExtension not found
+2026-10-05T14:44:51.315+03:00 DEBUG 30884 --- [taskmanager] [main] o.flywaydb.core.internal.parser.Parser   : Parsing V2__add_created_at_to_tasks.sql ...
+2026-10-05T14:44:51.317+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 1: ALTER TABLE tasks ADD COLUMN created_at TIMESTAMP DEFAULT NOW()
+2026-10-05T14:44:51.317+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Starting migration of schema "PUBLIC" to version "2 - add created at to tasks" ...
+2026-10-05T14:44:51.317+03:00  INFO 30884 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "2 - add created at to tasks"
+2026-10-05T14:44:51.317+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: ALTER TABLE tasks ADD COLUMN created_at TIMESTAMP DEFAULT NOW()
+2026-10-05T14:44:51.321+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T14:44:51.322+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Successfully completed migration of schema "PUBLIC" to version "2 - add created at to tasks"
+2026-10-05T14:44:51.323+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+2026-10-05T14:44:51.323+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.a.c.ClassicConfiguration           : CherryPickConfigurationExtension not found
+2026-10-05T14:44:51.323+03:00 DEBUG 30884 --- [taskmanager] [main] o.flywaydb.core.internal.parser.Parser   : Parsing V3__create_refresh_tokens.sql ...
+2026-10-05T14:44:51.325+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 1: CREATE TABLE refresh_tokens (
+                                id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                                token VARCHAR(255) NOT NULL UNIQUE,
+                                user_id BIGINT,
+                                expires_at TIMESTAMP NOT NULL,
+                                CONSTRAINT fk_refresh_user FOREIGN KEY (user_id) REFERENCES users(id)
+)
+2026-10-05T14:44:51.325+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Starting migration of schema "PUBLIC" to version "3 - create refresh tokens" ...
+2026-10-05T14:44:51.325+03:00  INFO 30884 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "3 - create refresh tokens"
+2026-10-05T14:44:51.325+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE refresh_tokens (
+                                id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                                token VARCHAR(255) NOT NULL UNIQUE,
+                                user_id BIGINT,
+                                expires_at TIMESTAMP NOT NULL,
+                                CONSTRAINT fk_refresh_user FOREIGN KEY (user_id) REFERENCES users(id)
+)
+2026-10-05T14:44:51.327+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T14:44:51.328+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Successfully completed migration of schema "PUBLIC" to version "3 - create refresh tokens"
+2026-10-05T14:44:51.329+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+2026-10-05T14:44:51.330+03:00 DEBUG 30884 --- [taskmanager] [main] o.f.c.a.c.ClassicConfiguration           : CherryPickConfigurationExtension not found
+2026-10-05T14:44:51.333+03:00  INFO 30884 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Successfully applied 3 migrations to schema "PUBLIC", now at version v3 (execution time 00:00.018s)
+2026-10-05T14:44:51.337+03:00 DEBUG 30884 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : Memory usage: 66 of 96M
+2026-10-05T14:44:51.411+03:00  INFO 30884 --- [taskmanager] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-05T14:44:51.452+03:00  INFO 30884 --- [taskmanager] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-05T14:44:51.775+03:00  INFO 30884 --- [taskmanager] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-05T14:44:51.835+03:00  INFO 30884 --- [taskmanager] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:taskdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TASKDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-05T14:44:52.574+03:00  INFO 30884 --- [taskmanager] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-05T14:44:52.579+03:00  INFO 30884 --- [taskmanager] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-05T14:44:52.634+03:00  INFO 30884 --- [taskmanager] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-05T14:44:52.817+03:00  INFO 30884 --- [taskmanager] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2026-10-05T14:44:53.136+03:00 TRACE 30884 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.RefreshTokenService.create' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T14:44:53.142+03:00 TRACE 30884 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.RefreshTokenService.verify' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T14:44:53.142+03:00 TRACE 30884 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.RefreshTokenService.deleteByUserId' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T14:44:53.149+03:00 TRACE 30884 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.AuthService.register' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T14:44:53.151+03:00 TRACE 30884 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.AuthService.refresh' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T14:44:53.151+03:00 TRACE 30884 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.AuthService.logout' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T14:44:53.151+03:00 TRACE 30884 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.AuthService.login' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T14:44:53.185+03:00 TRACE 30884 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.AuditService.logAction' with attribute: PROPAGATION_REQUIRES_NEW,ISOLATION_DEFAULT
+2026-10-05T14:44:53.189+03:00 TRACE 30884 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.update' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T14:44:53.197+03:00 TRACE 30884 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.delete' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T14:44:53.197+03:00 TRACE 30884 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.create' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T14:44:53.198+03:00 TRACE 30884 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.getAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2026-10-05T14:44:53.198+03:00 TRACE 30884 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.updateStatus' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T14:44:53.198+03:00 TRACE 30884 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.getById' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2026-10-05T14:44:53.198+03:00 TRACE 30884 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.getStats' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2026-10-05T14:44:53.198+03:00 TRACE 30884 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.getMy' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2026-10-05T14:44:53.233+03:00  WARN 30884 --- [taskmanager] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-05T14:44:53.407+03:00 DEBUG 30884 --- [taskmanager] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-10-05T14:44:53.663+03:00  INFO 30884 --- [taskmanager] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:taskdb'
+2026-10-05T14:44:53.708+03:00  INFO 30884 --- [taskmanager] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-10-05T14:44:53.711+03:00  INFO 30884 --- [taskmanager] [main] c.e.taskmanager.TaskmanagerApplication   : Started TaskmanagerApplication in 4.726 seconds (process running for 5.6)
+2026-10-05T14:44:53.715+03:00 TRACE 30884 --- [taskmanager] [main] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByEmail]: This method is not transactional.
+2026-10-05T14:44:53.880+03:00 TRACE 30884 --- [taskmanager] [main] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2026-10-05T14:44:53.906+03:00 TRACE 30884 --- [taskmanager] [main] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2026-10-05T14:44:53.912+03:00 TRACE 30884 --- [taskmanager] [main] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByEmail]: This method is not transactional.
+2026-10-05T14:44:53.974+03:00 TRACE 30884 --- [taskmanager] [main] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2026-10-05T14:44:53.975+03:00 TRACE 30884 --- [taskmanager] [main] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
