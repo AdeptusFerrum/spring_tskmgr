@@ -337,3 +337,23 @@ html.dark .alert-success { background: #22543d; color: #9ae6b4; }
 html.dark .alert-error { background: #742a2a; color: #feb2b2; }
 
 html.dark .empty { color: #e2e8f0; }
+
+/* Auth-страницы — центрирование без скролла */
+body.auth-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 20px;
+}
+
+body.auth-page form.auth-form {
+    margin: 0;
+    width: 100%;
+    max-width: 400px;
+}
+
+html.dark body.auth-page {
+    background: #1a202c;
+}

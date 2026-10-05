@@ -15747,3 +15747,753 @@ VALUES ('Изучить Flyway', 'Первая миграция', 'HIGH', 'NEW')
 2026-10-05T17:57:16.857+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
 2026-10-05T17:57:16.857+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
 2026-10-05T17:57:16.858+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T17:57:16.858952100 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T17:58:16.862+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T17:58:16.864+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T17:58:16.866+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T17:58:16.867+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T17:58:16.867030500 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T17:59:16.857+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T17:59:16.860+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T17:59:16.861+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T17:59:16.862+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T17:59:16.862311200 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T18:00:16.864+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:00:16.865+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:00:16.868+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:00:16.870+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T18:00:16.870252200 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T18:01:16.868+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:01:16.870+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:01:16.871+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:01:16.873+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T18:01:16.873116700 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T18:02:16.856+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:02:16.859+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:02:16.860+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:02:16.861+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T18:02:16.861003800 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T18:03:16.857+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:03:16.859+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:03:16.860+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:03:16.861+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T18:03:16.861088600 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T18:04:16.856+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:04:16.859+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:04:16.861+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:04:16.862+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T18:04:16.862854700 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T18:05:16.867+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:05:16.869+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:05:16.870+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:05:16.870+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T18:05:16.870553900 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T18:06:16.859+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:06:16.860+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:06:16.862+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:06:16.863+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T18:06:16.863953100 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T18:07:16.866+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:07:16.868+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:07:16.869+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:07:16.871+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T18:07:16.871327900 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T18:08:16.865+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:08:16.868+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:08:16.872+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:08:16.876+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T18:08:16.876165400 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T18:09:16.857+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:09:16.859+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:09:16.860+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:09:16.861+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T18:09:16.861907200 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T18:10:16.861+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:10:16.863+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:10:16.864+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:10:16.864+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T18:10:16.864568900 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T18:11:16.861+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:11:16.864+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:11:16.865+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:11:16.866+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T18:11:16.866097300 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T18:12:16.856+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:12:16.859+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:12:16.861+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:12:16.862+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T18:12:16.862440600 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T18:13:16.865+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:13:16.867+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:13:16.868+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:13:16.868+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T18:13:16.868891300 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T18:14:16.866+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:14:16.867+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:14:16.868+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:14:16.869+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T18:14:16.869556500 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T18:15:16.866+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:15:16.868+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:15:16.869+03:00 TRACE 30276 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T18:15:16.870+03:00  INFO 30276 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T18:15:16.870314900 — статистика: NEW=1, IN_PROGRESS=2, DONE=1
+2026-10-05T18:15:35.555+03:00  INFO 30276 --- [taskmanager] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-05T18:15:35.564+03:00  INFO 30276 --- [taskmanager] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-05T18:15:35.570+03:00  INFO 30276 --- [taskmanager] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-05T18:15:35.572+03:00  INFO 30276 --- [taskmanager] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-05T18:15:35.574+03:00  INFO 30276 --- [taskmanager] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-05T21:09:50.757+03:00  INFO 31840 --- [taskmanager] [main] c.e.taskmanager.TaskmanagerApplication   : Starting TaskmanagerApplication using Java 21.0.10 with PID 31840 (C:\Users\Виталий\Desktop\taskmanager\target\classes started by Виталий in C:\Users\Виталий\Desktop\taskmanager)
+2026-10-05T21:09:50.777+03:00  INFO 31840 --- [taskmanager] [main] c.e.taskmanager.TaskmanagerApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-10-05T21:09:53.867+03:00  INFO 31840 --- [taskmanager] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-05T21:09:53.928+03:00  INFO 31840 --- [taskmanager] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 52 ms. Found 5 JPA repository interfaces.
+2026-10-05T21:09:55.053+03:00  INFO 31840 --- [taskmanager] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-05T21:09:55.065+03:00  INFO 31840 --- [taskmanager] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-05T21:09:55.065+03:00  INFO 31840 --- [taskmanager] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-05T21:09:55.123+03:00  INFO 31840 --- [taskmanager] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 4229 ms
+2026-10-05T21:09:55.505+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Scanning for classpath resources at 'classpath:db/callback' ...
+2026-10-05T21:09:55.505+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Determining location urls for classpath:db/callback using ClassLoader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+jdk.internal.loader.ClassLoaders$AppClassLoader@3fee733d
+ ...
+2026-10-05T21:09:55.505+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Unable to resolve location classpath:db/callback.
+2026-10-05T21:09:55.505+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Scanning for classpath resources at 'classpath:db/migration' ...
+2026-10-05T21:09:55.505+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Determining location urls for classpath:db/migration using ClassLoader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+jdk.internal.loader.ClassLoaders$AppClassLoader@3fee733d
+ ...
+2026-10-05T21:09:55.506+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Scanning URL: file:/C:/Users/%d0%92%d0%b8%d1%82%d0%b0%d0%bb%d0%b8%d0%b9/Desktop/taskmanager/target/classes/db/migration
+2026-10-05T21:09:55.507+03:00 DEBUG 31840 --- [taskmanager] [main] i.s.c.FileSystemClassPathLocationScanner : Scanning starting at classpath root in filesystem: C:\Users\Виталий\Desktop\taskmanager\target\classes\
+2026-10-05T21:09:55.508+03:00 DEBUG 31840 --- [taskmanager] [main] i.s.c.FileSystemClassPathLocationScanner : Scanning for resources in path: C:\Users\Виталий\Desktop\taskmanager\target\classes\db\migration (db/migration)
+2026-10-05T21:09:55.510+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Found resource: db/migration/V1__create_tables.sql
+2026-10-05T21:09:55.510+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Found resource: db/migration/V2__add_created_at_to_tasks.sql
+2026-10-05T21:09:55.510+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Found resource: db/migration/V3__create_refresh_tokens.sql
+2026-10-05T21:09:55.510+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Scanning for classes at classpath:db/migration
+2026-10-05T21:09:55.512+03:00  INFO 31840 --- [taskmanager] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-05T21:09:55.666+03:00  INFO 31840 --- [taskmanager] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:taskdb user=SA
+2026-10-05T21:09:55.667+03:00  INFO 31840 --- [taskmanager] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-05T21:09:55.679+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.resource.ResourceNameValidator   : Validating V2__add_created_at_to_tasks.sql
+2026-10-05T21:09:55.680+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.resource.ResourceNameValidator   : Validating V3__create_refresh_tokens.sql
+2026-10-05T21:09:55.680+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.resource.ResourceNameValidator   : Validating V1__create_tables.sql
+2026-10-05T21:09:55.717+03:00  INFO 31840 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:taskdb (H2 2.4)
+2026-10-05T21:09:55.717+03:00 DEBUG 31840 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : Database Type: H2
+2026-10-05T21:09:55.717+03:00 DEBUG 31840 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : Driver: H2 JDBC Driver 2.4.240 (2025-09-22)
+2026-10-05T21:09:55.717+03:00 DEBUG 31840 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : DDL Transactions Supported: false
+2026-10-05T21:09:55.718+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.SchemaHistoryFactory           : Schemas: 
+2026-10-05T21:09:55.718+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.SchemaHistoryFactory           : Default schema: null
+2026-10-05T21:09:55.723+03:00  WARN 31840 --- [taskmanager] [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.4.240 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.3.232.
+2026-10-05T21:09:55.724+03:00 DEBUG 31840 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : Scanning for script callbacks ...
+2026-10-05T21:09:55.726+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.c.SqlScriptCallbackFactory       : Scanning for SQL callbacks ...
+2026-10-05T21:09:55.735+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.command.DbValidate     : Validating migrations ...
+2026-10-05T21:09:55.739+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.a.c.ClassicConfiguration           : CherryPickConfigurationExtension not found
+2026-10-05T21:09:55.769+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V2__add_created_at_to_tasks.sql (filename: V2__add_created_at_to_tasks.sql)
+2026-10-05T21:09:55.769+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V3__create_refresh_tokens.sql (filename: V3__create_refresh_tokens.sql)
+2026-10-05T21:09:55.769+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V1__create_tables.sql (filename: V1__create_tables.sql)
+2026-10-05T21:09:55.770+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V2__add_created_at_to_tasks.sql (filename: V2__add_created_at_to_tasks.sql)
+2026-10-05T21:09:55.770+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V3__create_refresh_tokens.sql (filename: V3__create_refresh_tokens.sql)
+2026-10-05T21:09:55.770+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V1__create_tables.sql (filename: V1__create_tables.sql)
+2026-10-05T21:09:55.771+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V2__add_created_at_to_tasks.sql (filename: V2__add_created_at_to_tasks.sql)
+2026-10-05T21:09:55.771+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V3__create_refresh_tokens.sql (filename: V3__create_refresh_tokens.sql)
+2026-10-05T21:09:55.772+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V1__create_tables.sql (filename: V1__create_tables.sql)
+2026-10-05T21:09:55.772+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V2__add_created_at_to_tasks.sql (filename: V2__add_created_at_to_tasks.sql)
+2026-10-05T21:09:55.772+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V3__create_refresh_tokens.sql (filename: V3__create_refresh_tokens.sql)
+2026-10-05T21:09:55.772+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V1__create_tables.sql (filename: V1__create_tables.sql)
+2026-10-05T21:09:55.774+03:00  INFO 31840 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-10-05T21:09:55.777+03:00  INFO 31840 --- [taskmanager] [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.040s)
+2026-10-05T21:09:55.779+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.command.DbSchemas      : Skipping creation of existing schema: "PUBLIC"
+2026-10-05T21:09:55.783+03:00  INFO 31840 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-10-05T21:09:55.787+03:00 DEBUG 31840 --- [taskmanager] [main] o.flywaydb.core.internal.parser.Parser   : Parsing  ...
+2026-10-05T21:09:55.794+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 1: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+2026-10-05T21:09:55.794+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 14: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+2026-10-05T21:09:55.795+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+2026-10-05T21:09:55.801+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:09:55.801+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+2026-10-05T21:09:55.802+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:09:55.803+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Created Schema History table "PUBLIC"."flyway_schema_history"
+2026-10-05T21:09:55.807+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.a.c.ClassicConfiguration           : CherryPickConfigurationExtension not found
+2026-10-05T21:09:55.812+03:00  INFO 31840 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-10-05T21:09:55.813+03:00 DEBUG 31840 --- [taskmanager] [main] o.flywaydb.core.internal.parser.Parser   : Parsing V1__create_tables.sql ...
+2026-10-05T21:09:55.816+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 1: CREATE TABLE users (
+                       id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                       email VARCHAR(255) NOT NULL UNIQUE,
+                       password VARCHAR(255) NOT NULL,
+                       role VARCHAR(50) NOT NULL
+)
+2026-10-05T21:09:55.817+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 8: CREATE TABLE tasks (
+                       id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                       title VARCHAR(255) NOT NULL,
+                       description VARCHAR(255),
+                       priority VARCHAR(50) NOT NULL,
+                       status VARCHAR(50) NOT NULL DEFAULT 'NEW',
+                       owner_id BIGINT,
+                       CONSTRAINT fk_tasks_owner FOREIGN KEY (owner_id) REFERENCES users(id)
+)
+2026-10-05T21:09:55.817+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 18: CREATE TABLE audit_logs (
+                            id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                            action VARCHAR(255) NOT NULL,
+                            task_id BIGINT,
+                            details VARCHAR(500),
+                            created_at TIMESTAMP NOT NULL
+)
+2026-10-05T21:09:55.817+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 26: CREATE TABLE tags (
+                      id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                      name VARCHAR(100) NOT NULL UNIQUE
+)
+2026-10-05T21:09:55.818+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 31: CREATE TABLE task_tags (
+                           task_id BIGINT NOT NULL,
+                           tag_id BIGINT NOT NULL,
+                           PRIMARY KEY (task_id, tag_id),
+                           CONSTRAINT fk_task_tags_task FOREIGN KEY (task_id) REFERENCES tasks(id) ON DELETE CASCADE,
+                           CONSTRAINT fk_task_tags_tag FOREIGN KEY (tag_id) REFERENCES tags(id) ON DELETE CASCADE
+)
+2026-10-05T21:09:55.819+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 39: INSERT INTO tasks (title, description, priority, status)
+VALUES ('Изучить Flyway', 'Первая миграция', 'HIGH', 'NEW'),
+       ('Написать тесты', 'Потом', 'MEDIUM', 'NEW')
+2026-10-05T21:09:55.819+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 43: INSERT INTO tags (name) VALUES ('работа'), ('дом'), ('срочно'), ('учёба')
+2026-10-05T21:09:55.821+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Starting migration of schema "PUBLIC" to version "1 - create tables" ...
+2026-10-05T21:09:55.822+03:00  INFO 31840 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - create tables"
+2026-10-05T21:09:55.823+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE users (
+                       id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                       email VARCHAR(255) NOT NULL UNIQUE,
+                       password VARCHAR(255) NOT NULL,
+                       role VARCHAR(50) NOT NULL
+)
+2026-10-05T21:09:55.827+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:09:55.828+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE tasks (
+                       id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                       title VARCHAR(255) NOT NULL,
+                       description VARCHAR(255),
+                       priority VARCHAR(50) NOT NULL,
+                       status VARCHAR(50) NOT NULL DEFAULT 'NEW',
+                       owner_id BIGINT,
+                       CONSTRAINT fk_tasks_owner FOREIGN KEY (owner_id) REFERENCES users(id)
+)
+2026-10-05T21:09:55.831+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:09:55.832+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE audit_logs (
+                            id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                            action VARCHAR(255) NOT NULL,
+                            task_id BIGINT,
+                            details VARCHAR(500),
+                            created_at TIMESTAMP NOT NULL
+)
+2026-10-05T21:09:55.832+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:09:55.832+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE tags (
+                      id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                      name VARCHAR(100) NOT NULL UNIQUE
+)
+2026-10-05T21:09:55.833+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:09:55.833+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE task_tags (
+                           task_id BIGINT NOT NULL,
+                           tag_id BIGINT NOT NULL,
+                           PRIMARY KEY (task_id, tag_id),
+                           CONSTRAINT fk_task_tags_task FOREIGN KEY (task_id) REFERENCES tasks(id) ON DELETE CASCADE,
+                           CONSTRAINT fk_task_tags_tag FOREIGN KEY (tag_id) REFERENCES tags(id) ON DELETE CASCADE
+)
+2026-10-05T21:09:55.835+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:09:55.835+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: INSERT INTO tasks (title, description, priority, status)
+VALUES ('Изучить Flyway', 'Первая миграция', 'HIGH', 'NEW'),
+       ('Написать тесты', 'Потом', 'MEDIUM', 'NEW')
+2026-10-05T21:09:55.835+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 2 rows affected
+2026-10-05T21:09:55.835+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: INSERT INTO tags (name) VALUES ('работа'), ('дом'), ('срочно'), ('учёба')
+2026-10-05T21:09:55.836+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 4 rows affected
+2026-10-05T21:09:55.836+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Successfully completed migration of schema "PUBLIC" to version "1 - create tables"
+2026-10-05T21:09:55.839+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+2026-10-05T21:09:55.840+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.a.c.ClassicConfiguration           : CherryPickConfigurationExtension not found
+2026-10-05T21:09:55.842+03:00 DEBUG 31840 --- [taskmanager] [main] o.flywaydb.core.internal.parser.Parser   : Parsing V2__add_created_at_to_tasks.sql ...
+2026-10-05T21:09:55.843+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 1: ALTER TABLE tasks ADD COLUMN created_at TIMESTAMP DEFAULT NOW()
+2026-10-05T21:09:55.844+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Starting migration of schema "PUBLIC" to version "2 - add created at to tasks" ...
+2026-10-05T21:09:55.844+03:00  INFO 31840 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "2 - add created at to tasks"
+2026-10-05T21:09:55.844+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: ALTER TABLE tasks ADD COLUMN created_at TIMESTAMP DEFAULT NOW()
+2026-10-05T21:09:55.850+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:09:55.851+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Successfully completed migration of schema "PUBLIC" to version "2 - add created at to tasks"
+2026-10-05T21:09:55.852+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+2026-10-05T21:09:55.852+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.a.c.ClassicConfiguration           : CherryPickConfigurationExtension not found
+2026-10-05T21:09:55.853+03:00 DEBUG 31840 --- [taskmanager] [main] o.flywaydb.core.internal.parser.Parser   : Parsing V3__create_refresh_tokens.sql ...
+2026-10-05T21:09:55.854+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 1: CREATE TABLE refresh_tokens (
+                                id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                                token VARCHAR(255) NOT NULL UNIQUE,
+                                user_id BIGINT,
+                                expires_at TIMESTAMP NOT NULL,
+                                CONSTRAINT fk_refresh_user FOREIGN KEY (user_id) REFERENCES users(id)
+)
+2026-10-05T21:09:55.855+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Starting migration of schema "PUBLIC" to version "3 - create refresh tokens" ...
+2026-10-05T21:09:55.855+03:00  INFO 31840 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "3 - create refresh tokens"
+2026-10-05T21:09:55.855+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE refresh_tokens (
+                                id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                                token VARCHAR(255) NOT NULL UNIQUE,
+                                user_id BIGINT,
+                                expires_at TIMESTAMP NOT NULL,
+                                CONSTRAINT fk_refresh_user FOREIGN KEY (user_id) REFERENCES users(id)
+)
+2026-10-05T21:09:55.857+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:09:55.857+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Successfully completed migration of schema "PUBLIC" to version "3 - create refresh tokens"
+2026-10-05T21:09:55.858+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+2026-10-05T21:09:55.859+03:00 DEBUG 31840 --- [taskmanager] [main] o.f.c.a.c.ClassicConfiguration           : CherryPickConfigurationExtension not found
+2026-10-05T21:09:55.863+03:00  INFO 31840 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Successfully applied 3 migrations to schema "PUBLIC", now at version v3 (execution time 00:00.023s)
+2026-10-05T21:09:55.867+03:00 DEBUG 31840 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : Memory usage: 89 of 284M
+2026-10-05T21:09:55.944+03:00  INFO 31840 --- [taskmanager] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-05T21:09:55.995+03:00  INFO 31840 --- [taskmanager] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-05T21:09:56.352+03:00  INFO 31840 --- [taskmanager] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-05T21:09:56.437+03:00  INFO 31840 --- [taskmanager] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:taskdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TASKDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-05T21:09:57.402+03:00  INFO 31840 --- [taskmanager] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-05T21:09:57.409+03:00  INFO 31840 --- [taskmanager] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-05T21:09:57.473+03:00  INFO 31840 --- [taskmanager] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-05T21:09:57.818+03:00  INFO 31840 --- [taskmanager] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2026-10-05T21:09:58.213+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.RefreshTokenService.create' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:09:58.220+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.RefreshTokenService.verify' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:09:58.220+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.RefreshTokenService.deleteByUserId' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:09:58.227+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.AuthService.register' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:09:58.228+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.AuthService.refresh' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:09:58.228+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.AuthService.login' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:09:58.229+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.AuthService.logout' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:09:58.550+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.AuditService.logAction' with attribute: PROPAGATION_REQUIRES_NEW,ISOLATION_DEFAULT
+2026-10-05T21:09:58.551+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.AuditService.logAction' with attribute: PROPAGATION_REQUIRES_NEW,ISOLATION_DEFAULT
+2026-10-05T21:09:58.576+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.update' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:09:58.583+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.delete' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:09:58.584+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.create' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:09:58.584+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.search' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2026-10-05T21:09:58.585+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.getAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2026-10-05T21:09:58.585+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.updateStatus' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:09:58.585+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.getById' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2026-10-05T21:09:58.585+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.getStats' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2026-10-05T21:09:58.585+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.getMy' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2026-10-05T21:09:58.585+03:00 TRACE 31840 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.getAllPaged' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2026-10-05T21:09:58.714+03:00  WARN 31840 --- [taskmanager] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-05T21:09:58.990+03:00 DEBUG 31840 --- [taskmanager] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-10-05T21:09:59.811+03:00  INFO 31840 --- [taskmanager] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:taskdb'
+2026-10-05T21:09:59.917+03:00  INFO 31840 --- [taskmanager] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 6 endpoints beneath base path '/actuator'
+2026-10-05T21:10:00.113+03:00  WARN 31840 --- [taskmanager] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'
+2026-10-05T21:10:00.118+03:00  INFO 31840 --- [taskmanager] [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-05T21:10:00.120+03:00  INFO 31840 --- [taskmanager] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-05T21:10:00.123+03:00  INFO 31840 --- [taskmanager] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2026-10-05T21:10:00.136+03:00  INFO 31840 --- [taskmanager] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-10-05T21:10:00.147+03:00 ERROR 31840 --- [taskmanager] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-10-05T21:10:56.714+03:00  INFO 33660 --- [taskmanager] [main] c.e.taskmanager.TaskmanagerApplication   : Starting TaskmanagerApplication using Java 21.0.10 with PID 33660 (C:\Users\Виталий\Desktop\taskmanager\target\classes started by Виталий in C:\Users\Виталий\Desktop\taskmanager)
+2026-10-05T21:10:56.716+03:00  INFO 33660 --- [taskmanager] [main] c.e.taskmanager.TaskmanagerApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-10-05T21:10:57.870+03:00  INFO 33660 --- [taskmanager] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-10-05T21:10:57.919+03:00  INFO 33660 --- [taskmanager] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 42 ms. Found 5 JPA repository interfaces.
+2026-10-05T21:10:58.602+03:00  INFO 33660 --- [taskmanager] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat initialized with port 8080 (http)
+2026-10-05T21:10:58.615+03:00  INFO 33660 --- [taskmanager] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-10-05T21:10:58.615+03:00  INFO 33660 --- [taskmanager] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/11.0.24]
+2026-10-05T21:10:58.669+03:00  INFO 33660 --- [taskmanager] [main] b.w.c.s.WebApplicationContextInitializer : Root WebApplicationContext: initialization completed in 1915 ms
+2026-10-05T21:10:58.939+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Scanning for classpath resources at 'classpath:db/callback' ...
+2026-10-05T21:10:58.939+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Determining location urls for classpath:db/callback using ClassLoader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+jdk.internal.loader.ClassLoaders$AppClassLoader@3fee733d
+ ...
+2026-10-05T21:10:58.939+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Unable to resolve location classpath:db/callback.
+2026-10-05T21:10:58.939+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Scanning for classpath resources at 'classpath:db/migration' ...
+2026-10-05T21:10:58.939+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Determining location urls for classpath:db/migration using ClassLoader TomcatEmbeddedWebappClassLoader
+  context: ROOT
+  delegate: true
+----------> Parent Classloader:
+jdk.internal.loader.ClassLoaders$AppClassLoader@3fee733d
+ ...
+2026-10-05T21:10:58.940+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Scanning URL: file:/C:/Users/%d0%92%d0%b8%d1%82%d0%b0%d0%bb%d0%b8%d0%b9/Desktop/taskmanager/target/classes/db/migration
+2026-10-05T21:10:58.941+03:00 DEBUG 33660 --- [taskmanager] [main] i.s.c.FileSystemClassPathLocationScanner : Scanning starting at classpath root in filesystem: C:\Users\Виталий\Desktop\taskmanager\target\classes\
+2026-10-05T21:10:58.941+03:00 DEBUG 33660 --- [taskmanager] [main] i.s.c.FileSystemClassPathLocationScanner : Scanning for resources in path: C:\Users\Виталий\Desktop\taskmanager\target\classes\db\migration (db/migration)
+2026-10-05T21:10:58.942+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Found resource: db/migration/V1__create_tables.sql
+2026-10-05T21:10:58.943+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Found resource: db/migration/V2__add_created_at_to_tasks.sql
+2026-10-05T21:10:58.943+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Found resource: db/migration/V3__create_refresh_tokens.sql
+2026-10-05T21:10:58.943+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.classpath.ClassPathScanner     : Scanning for classes at classpath:db/migration
+2026-10-05T21:10:58.945+03:00  INFO 33660 --- [taskmanager] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-10-05T21:10:59.079+03:00  INFO 33660 --- [taskmanager] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:taskdb user=SA
+2026-10-05T21:10:59.081+03:00  INFO 33660 --- [taskmanager] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-10-05T21:10:59.091+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.resource.ResourceNameValidator   : Validating V2__add_created_at_to_tasks.sql
+2026-10-05T21:10:59.092+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.resource.ResourceNameValidator   : Validating V3__create_refresh_tokens.sql
+2026-10-05T21:10:59.092+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.resource.ResourceNameValidator   : Validating V1__create_tables.sql
+2026-10-05T21:10:59.113+03:00  INFO 33660 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : Database: jdbc:h2:mem:taskdb (H2 2.4)
+2026-10-05T21:10:59.114+03:00 DEBUG 33660 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : Database Type: H2
+2026-10-05T21:10:59.114+03:00 DEBUG 33660 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : Driver: H2 JDBC Driver 2.4.240 (2025-09-22)
+2026-10-05T21:10:59.114+03:00 DEBUG 33660 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : DDL Transactions Supported: false
+2026-10-05T21:10:59.115+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.SchemaHistoryFactory           : Schemas: 
+2026-10-05T21:10:59.115+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.SchemaHistoryFactory           : Default schema: null
+2026-10-05T21:10:59.117+03:00  WARN 33660 --- [taskmanager] [main] o.f.c.internal.database.base.Database    : Flyway upgrade recommended: H2 2.4.240 is newer than this version of Flyway and support has not been tested. The latest supported version of H2 is 2.3.232.
+2026-10-05T21:10:59.118+03:00 DEBUG 33660 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : Scanning for script callbacks ...
+2026-10-05T21:10:59.120+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.c.SqlScriptCallbackFactory       : Scanning for SQL callbacks ...
+2026-10-05T21:10:59.126+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.command.DbValidate     : Validating migrations ...
+2026-10-05T21:10:59.128+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.a.c.ClassicConfiguration           : CherryPickConfigurationExtension not found
+2026-10-05T21:10:59.133+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V2__add_created_at_to_tasks.sql (filename: V2__add_created_at_to_tasks.sql)
+2026-10-05T21:10:59.134+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V3__create_refresh_tokens.sql (filename: V3__create_refresh_tokens.sql)
+2026-10-05T21:10:59.134+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V1__create_tables.sql (filename: V1__create_tables.sql)
+2026-10-05T21:10:59.134+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V2__add_created_at_to_tasks.sql (filename: V2__add_created_at_to_tasks.sql)
+2026-10-05T21:10:59.134+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V3__create_refresh_tokens.sql (filename: V3__create_refresh_tokens.sql)
+2026-10-05T21:10:59.134+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V1__create_tables.sql (filename: V1__create_tables.sql)
+2026-10-05T21:10:59.135+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V2__add_created_at_to_tasks.sql (filename: V2__add_created_at_to_tasks.sql)
+2026-10-05T21:10:59.136+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V3__create_refresh_tokens.sql (filename: V3__create_refresh_tokens.sql)
+2026-10-05T21:10:59.136+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V1__create_tables.sql (filename: V1__create_tables.sql)
+2026-10-05T21:10:59.136+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V2__add_created_at_to_tasks.sql (filename: V2__add_created_at_to_tasks.sql)
+2026-10-05T21:10:59.136+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V3__create_refresh_tokens.sql (filename: V3__create_refresh_tokens.sql)
+2026-10-05T21:10:59.136+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.scanner.Scanner        : Filtering out resource: db/migration/V1__create_tables.sql (filename: V1__create_tables.sql)
+2026-10-05T21:10:59.137+03:00  INFO 33660 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema history table "PUBLIC"."flyway_schema_history" does not exist yet
+2026-10-05T21:10:59.139+03:00  INFO 33660 --- [taskmanager] [main] o.f.core.internal.command.DbValidate     : Successfully validated 3 migrations (execution time 00:00.012s)
+2026-10-05T21:10:59.141+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.command.DbSchemas      : Skipping creation of existing schema: "PUBLIC"
+2026-10-05T21:10:59.144+03:00  INFO 33660 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+2026-10-05T21:10:59.147+03:00 DEBUG 33660 --- [taskmanager] [main] o.flywaydb.core.internal.parser.Parser   : Parsing  ...
+2026-10-05T21:10:59.154+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 1: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+2026-10-05T21:10:59.154+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 14: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+2026-10-05T21:10:59.155+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE IF NOT EXISTS "PUBLIC"."flyway_schema_history" (
+    "installed_rank" INT NOT NULL,
+    "version" VARCHAR(50),
+    "description" VARCHAR(200) NOT NULL,
+    "type" VARCHAR(20) NOT NULL,
+    "script" VARCHAR(1000) NOT NULL,
+    "checksum" INT,
+    "installed_by" VARCHAR(100) NOT NULL,
+    "installed_on" TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+    "execution_time" INT NOT NULL,
+    "success" BOOLEAN NOT NULL,
+    CONSTRAINT "flyway_schema_history_pk" PRIMARY KEY ("installed_rank")
+) AS SELECT -1, NULL, '<< Flyway Schema History table created >>', 'TABLE', '', NULL, 'SA', CURRENT_TIMESTAMP, 0, TRUE
+2026-10-05T21:10:59.160+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:10:59.161+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE INDEX "PUBLIC"."flyway_schema_history_s_idx" ON "PUBLIC"."flyway_schema_history" ("success")
+2026-10-05T21:10:59.162+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:10:59.162+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Created Schema History table "PUBLIC"."flyway_schema_history"
+2026-10-05T21:10:59.167+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.a.c.ClassicConfiguration           : CherryPickConfigurationExtension not found
+2026-10-05T21:10:59.173+03:00  INFO 33660 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Current version of schema "PUBLIC": << Empty Schema >>
+2026-10-05T21:10:59.174+03:00 DEBUG 33660 --- [taskmanager] [main] o.flywaydb.core.internal.parser.Parser   : Parsing V1__create_tables.sql ...
+2026-10-05T21:10:59.176+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 1: CREATE TABLE users (
+                       id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                       email VARCHAR(255) NOT NULL UNIQUE,
+                       password VARCHAR(255) NOT NULL,
+                       role VARCHAR(50) NOT NULL
+)
+2026-10-05T21:10:59.178+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 8: CREATE TABLE tasks (
+                       id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                       title VARCHAR(255) NOT NULL,
+                       description VARCHAR(255),
+                       priority VARCHAR(50) NOT NULL,
+                       status VARCHAR(50) NOT NULL DEFAULT 'NEW',
+                       owner_id BIGINT,
+                       CONSTRAINT fk_tasks_owner FOREIGN KEY (owner_id) REFERENCES users(id)
+)
+2026-10-05T21:10:59.178+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 18: CREATE TABLE audit_logs (
+                            id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                            action VARCHAR(255) NOT NULL,
+                            task_id BIGINT,
+                            details VARCHAR(500),
+                            created_at TIMESTAMP NOT NULL
+)
+2026-10-05T21:10:59.179+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 26: CREATE TABLE tags (
+                      id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                      name VARCHAR(100) NOT NULL UNIQUE
+)
+2026-10-05T21:10:59.180+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 31: CREATE TABLE task_tags (
+                           task_id BIGINT NOT NULL,
+                           tag_id BIGINT NOT NULL,
+                           PRIMARY KEY (task_id, tag_id),
+                           CONSTRAINT fk_task_tags_task FOREIGN KEY (task_id) REFERENCES tasks(id) ON DELETE CASCADE,
+                           CONSTRAINT fk_task_tags_tag FOREIGN KEY (tag_id) REFERENCES tags(id) ON DELETE CASCADE
+)
+2026-10-05T21:10:59.180+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 39: INSERT INTO tasks (title, description, priority, status)
+VALUES ('Изучить Flyway', 'Первая миграция', 'HIGH', 'NEW'),
+       ('Написать тесты', 'Потом', 'MEDIUM', 'NEW')
+2026-10-05T21:10:59.181+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 43: INSERT INTO tags (name) VALUES ('работа'), ('дом'), ('срочно'), ('учёба')
+2026-10-05T21:10:59.182+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Starting migration of schema "PUBLIC" to version "1 - create tables" ...
+2026-10-05T21:10:59.184+03:00  INFO 33660 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "1 - create tables"
+2026-10-05T21:10:59.185+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE users (
+                       id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                       email VARCHAR(255) NOT NULL UNIQUE,
+                       password VARCHAR(255) NOT NULL,
+                       role VARCHAR(50) NOT NULL
+)
+2026-10-05T21:10:59.191+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:10:59.191+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE tasks (
+                       id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                       title VARCHAR(255) NOT NULL,
+                       description VARCHAR(255),
+                       priority VARCHAR(50) NOT NULL,
+                       status VARCHAR(50) NOT NULL DEFAULT 'NEW',
+                       owner_id BIGINT,
+                       CONSTRAINT fk_tasks_owner FOREIGN KEY (owner_id) REFERENCES users(id)
+)
+2026-10-05T21:10:59.195+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:10:59.195+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE audit_logs (
+                            id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                            action VARCHAR(255) NOT NULL,
+                            task_id BIGINT,
+                            details VARCHAR(500),
+                            created_at TIMESTAMP NOT NULL
+)
+2026-10-05T21:10:59.196+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:10:59.196+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE tags (
+                      id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                      name VARCHAR(100) NOT NULL UNIQUE
+)
+2026-10-05T21:10:59.197+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:10:59.197+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE task_tags (
+                           task_id BIGINT NOT NULL,
+                           tag_id BIGINT NOT NULL,
+                           PRIMARY KEY (task_id, tag_id),
+                           CONSTRAINT fk_task_tags_task FOREIGN KEY (task_id) REFERENCES tasks(id) ON DELETE CASCADE,
+                           CONSTRAINT fk_task_tags_tag FOREIGN KEY (tag_id) REFERENCES tags(id) ON DELETE CASCADE
+)
+2026-10-05T21:10:59.199+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:10:59.199+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: INSERT INTO tasks (title, description, priority, status)
+VALUES ('Изучить Flyway', 'Первая миграция', 'HIGH', 'NEW'),
+       ('Написать тесты', 'Потом', 'MEDIUM', 'NEW')
+2026-10-05T21:10:59.200+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 2 rows affected
+2026-10-05T21:10:59.200+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: INSERT INTO tags (name) VALUES ('работа'), ('дом'), ('срочно'), ('учёба')
+2026-10-05T21:10:59.201+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 4 rows affected
+2026-10-05T21:10:59.201+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Successfully completed migration of schema "PUBLIC" to version "1 - create tables"
+2026-10-05T21:10:59.203+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+2026-10-05T21:10:59.204+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.a.c.ClassicConfiguration           : CherryPickConfigurationExtension not found
+2026-10-05T21:10:59.206+03:00 DEBUG 33660 --- [taskmanager] [main] o.flywaydb.core.internal.parser.Parser   : Parsing V2__add_created_at_to_tasks.sql ...
+2026-10-05T21:10:59.208+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 1: ALTER TABLE tasks ADD COLUMN created_at TIMESTAMP DEFAULT NOW()
+2026-10-05T21:10:59.208+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Starting migration of schema "PUBLIC" to version "2 - add created at to tasks" ...
+2026-10-05T21:10:59.208+03:00  INFO 33660 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "2 - add created at to tasks"
+2026-10-05T21:10:59.208+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: ALTER TABLE tasks ADD COLUMN created_at TIMESTAMP DEFAULT NOW()
+2026-10-05T21:10:59.215+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:10:59.215+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Successfully completed migration of schema "PUBLIC" to version "2 - add created at to tasks"
+2026-10-05T21:10:59.216+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+2026-10-05T21:10:59.217+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.a.c.ClassicConfiguration           : CherryPickConfigurationExtension not found
+2026-10-05T21:10:59.218+03:00 DEBUG 33660 --- [taskmanager] [main] o.flywaydb.core.internal.parser.Parser   : Parsing V3__create_refresh_tokens.sql ...
+2026-10-05T21:10:59.219+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.sqlscript.ParserSqlScript        : Found statement at line 1: CREATE TABLE refresh_tokens (
+                                id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                                token VARCHAR(255) NOT NULL UNIQUE,
+                                user_id BIGINT,
+                                expires_at TIMESTAMP NOT NULL,
+                                CONSTRAINT fk_refresh_user FOREIGN KEY (user_id) REFERENCES users(id)
+)
+2026-10-05T21:10:59.219+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Starting migration of schema "PUBLIC" to version "3 - create refresh tokens" ...
+2026-10-05T21:10:59.219+03:00  INFO 33660 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Migrating schema "PUBLIC" to version "3 - create refresh tokens"
+2026-10-05T21:10:59.220+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : Executing SQL: CREATE TABLE refresh_tokens (
+                                id BIGINT GENERATED BY DEFAULT AS IDENTITY PRIMARY KEY,
+                                token VARCHAR(255) NOT NULL UNIQUE,
+                                user_id BIGINT,
+                                expires_at TIMESTAMP NOT NULL,
+                                CONSTRAINT fk_refresh_user FOREIGN KEY (user_id) REFERENCES users(id)
+)
+2026-10-05T21:10:59.221+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.DefaultSqlScriptExecutor       : 0 rows affected
+2026-10-05T21:10:59.221+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Successfully completed migration of schema "PUBLIC" to version "3 - create refresh tokens"
+2026-10-05T21:10:59.222+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.i.s.JdbcTableSchemaHistory         : Schema History table "PUBLIC"."flyway_schema_history" successfully updated to reflect changes
+2026-10-05T21:10:59.223+03:00 DEBUG 33660 --- [taskmanager] [main] o.f.c.a.c.ClassicConfiguration           : CherryPickConfigurationExtension not found
+2026-10-05T21:10:59.226+03:00  INFO 33660 --- [taskmanager] [main] o.f.core.internal.command.DbMigrate      : Successfully applied 3 migrations to schema "PUBLIC", now at version v3 (execution time 00:00.027s)
+2026-10-05T21:10:59.231+03:00 DEBUG 33660 --- [taskmanager] [main] org.flywaydb.core.FlywayExecutor         : Memory usage: 66 of 84M
+2026-10-05T21:10:59.310+03:00  INFO 33660 --- [taskmanager] [main] org.hibernate.orm.jpa                    : HHH008540: Processing PersistenceUnitInfo [name: default]
+2026-10-05T21:10:59.352+03:00  INFO 33660 --- [taskmanager] [main] org.hibernate.orm.core                   : HHH000001: Hibernate ORM core version 7.4.5.Final
+2026-10-05T21:10:59.691+03:00  INFO 33660 --- [taskmanager] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-10-05T21:10:59.752+03:00  INFO 33660 --- [taskmanager] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [jdbc:h2:mem:taskdb]
+	Database driver: H2 JDBC Driver
+	Database dialect: H2Dialect
+	Database version: 2.4.240
+	Default catalog/schema: TASKDB/PUBLIC
+	Autocommit mode: undefined/unknown
+	Isolation level: READ_COMMITTED [default READ_COMMITTED]
+	JDBC fetch size: 100
+	Pool: DataSourceConnectionProvider
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-10-05T21:11:00.537+03:00  INFO 33660 --- [taskmanager] [main] org.hibernate.orm.core                   : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-10-05T21:11:00.543+03:00  INFO 33660 --- [taskmanager] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-10-05T21:11:00.609+03:00  INFO 33660 --- [taskmanager] [main] o.s.d.j.r.query.QueryEnhancerFactories   : Hibernate is in classpath; If applicable, HQL parser will be used.
+2026-10-05T21:11:00.977+03:00  INFO 33660 --- [taskmanager] [main] r$InitializeUserDetailsManagerConfigurer : Global AuthenticationManager configured with UserDetailsService bean with name userDetailsServiceImpl
+2026-10-05T21:11:01.339+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.RefreshTokenService.create' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:11:01.346+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.RefreshTokenService.verify' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:11:01.347+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.RefreshTokenService.deleteByUserId' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:11:01.356+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.AuthService.register' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:11:01.357+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.AuthService.refresh' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:11:01.357+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.AuthService.logout' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:11:01.357+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.AuthService.login' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:11:01.652+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.AuditService.logAction' with attribute: PROPAGATION_REQUIRES_NEW,ISOLATION_DEFAULT
+2026-10-05T21:11:01.653+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.AuditService.logAction' with attribute: PROPAGATION_REQUIRES_NEW,ISOLATION_DEFAULT
+2026-10-05T21:11:01.681+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.update' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:11:01.688+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.delete' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:11:01.688+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.create' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:11:01.689+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.search' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2026-10-05T21:11:01.689+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.getAll' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2026-10-05T21:11:01.690+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.updateStatus' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT
+2026-10-05T21:11:01.690+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.getById' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2026-10-05T21:11:01.690+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.getMy' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2026-10-05T21:11:01.690+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.getStats' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2026-10-05T21:11:01.690+03:00 TRACE 33660 --- [taskmanager] [main] t.a.AnnotationTransactionAttributeSource : Adding transactional method 'com.example.taskmanager.service.TaskService.getAllPaged' with attribute: PROPAGATION_REQUIRED,ISOLATION_DEFAULT,readOnly
+2026-10-05T21:11:01.814+03:00  WARN 33660 --- [taskmanager] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-10-05T21:11:02.075+03:00 DEBUG 33660 --- [taskmanager] [main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with filters: DisableEncodeUrlFilter, WebAsyncManagerIntegrationFilter, SecurityContextHolderFilter, HeaderWriterFilter, LogoutFilter, JwtAuthFilter, UsernamePasswordAuthenticationFilter, RequestCacheAwareFilter, SecurityContextHolderAwareRequestFilter, AnonymousAuthenticationFilter, SessionManagementFilter, ExceptionTranslationFilter, AuthorizationFilter
+2026-10-05T21:11:02.768+03:00  INFO 33660 --- [taskmanager] [main] o.s.b.h.a.H2ConsoleAutoConfiguration     : H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:taskdb'
+2026-10-05T21:11:02.872+03:00  INFO 33660 --- [taskmanager] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 6 endpoints beneath base path '/actuator'
+2026-10-05T21:11:02.940+03:00  INFO 33660 --- [taskmanager] [main] o.s.boot.tomcat.TomcatWebServer          : Tomcat started on port 8080 (http) with context path '/'
+2026-10-05T21:11:02.984+03:00  INFO 33660 --- [taskmanager] [main] c.e.taskmanager.TaskmanagerApplication   : Started TaskmanagerApplication in 6.6 seconds (process running for 7.089)
+2026-10-05T21:11:02.998+03:00 TRACE 33660 --- [taskmanager] [main] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByEmail]: This method is not transactional.
+2026-10-05T21:11:03.170+03:00 TRACE 33660 --- [taskmanager] [main] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2026-10-05T21:11:03.198+03:00 TRACE 33660 --- [taskmanager] [main] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2026-10-05T21:11:03.204+03:00 TRACE 33660 --- [taskmanager] [main] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByEmail]: This method is not transactional.
+2026-10-05T21:11:03.269+03:00 TRACE 33660 --- [taskmanager] [main] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2026-10-05T21:11:03.270+03:00 TRACE 33660 --- [taskmanager] [main] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2026-10-05T21:11:03.271+03:00  WARN 33660 --- [taskmanager] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /v3/api-docs endpoint is enabled by default. To disable it in production, set the property 'springdoc.api-docs.enabled=false'
+2026-10-05T21:11:03.271+03:00  WARN 33660 --- [taskmanager] [main] o.s.core.events.SpringDocAppInitializer  : SpringDoc /swagger-ui.html endpoint is enabled by default. To disable it in production, set the property 'springdoc.swagger-ui.enabled=false'
+2026-10-05T21:11:03.778+03:00  INFO 33660 --- [taskmanager] [RMI TCP Connection(3)-172.19.0.1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-10-05T21:11:03.779+03:00  INFO 33660 --- [taskmanager] [RMI TCP Connection(3)-172.19.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2026-10-05T21:11:03.780+03:00  INFO 33660 --- [taskmanager] [RMI TCP Connection(3)-172.19.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2026-10-05T21:11:07.613+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /login?logout
+2026-10-05T21:11:07.651+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-10-05T21:11:07.651+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 24AF4217AD063DD48A17FDC482660AB5
+2026-10-05T21:11:07.656+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /login?logout
+2026-10-05T21:11:07.920+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /css/style.css
+2026-10-05T21:11:07.921+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-10-05T21:11:07.921+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-2] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 24AF4217AD063DD48A17FDC482660AB5
+2026-10-05T21:11:07.922+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /css/style.css
+2026-10-05T21:11:10.635+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /login
+2026-10-05T21:11:10.636+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-3] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-10-05T21:11:10.637+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-3] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 24AF4217AD063DD48A17FDC482660AB5
+2026-10-05T21:11:10.638+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /login
+2026-10-05T21:11:10.666+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /css/style.css
+2026-10-05T21:11:10.666+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-4] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-10-05T21:11:10.666+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-4] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 24AF4217AD063DD48A17FDC482660AB5
+2026-10-05T21:11:10.667+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /css/style.css
+2026-10-05T21:11:12.997+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:11:13.052+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:11:13.053+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:11:13.054+03:00  INFO 33660 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T21:11:13.054512700 — статистика: NEW=2, IN_PROGRESS=0, DONE=0
+2026-10-05T21:12:12.772+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2026-10-05T21:12:12.773+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-7] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-10-05T21:12:12.773+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-7] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 24AF4217AD063DD48A17FDC482660AB5
+2026-10-05T21:12:12.774+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2026-10-05T21:12:12.996+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:12:12.998+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:12:13.000+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:12:13.001+03:00  INFO 33660 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T21:12:13.001291700 — статистика: NEW=2, IN_PROGRESS=0, DONE=0
+2026-10-05T21:12:24.906+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /login
+2026-10-05T21:12:24.906+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-8] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-10-05T21:12:24.906+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-8] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 24AF4217AD063DD48A17FDC482660AB5
+2026-10-05T21:12:24.907+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /login
+2026-10-05T21:12:24.939+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /css/style.css
+2026-10-05T21:12:24.940+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-9] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-10-05T21:12:24.940+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-9] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 24AF4217AD063DD48A17FDC482660AB5
+2026-10-05T21:12:24.941+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /css/style.css
+2026-10-05T21:12:24.972+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2026-10-05T21:12:24.974+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-10] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-10-05T21:12:24.974+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-10] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 24AF4217AD063DD48A17FDC482660AB5
+2026-10-05T21:12:24.974+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-10] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2026-10-05T21:12:33.507+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Securing GET /login?logout
+2026-10-05T21:12:33.508+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-1] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-10-05T21:12:33.508+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-1] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 24AF4217AD063DD48A17FDC482660AB5
+2026-10-05T21:12:33.509+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-1] o.s.security.web.FilterChainProxy        : Secured GET /login?logout
+2026-10-05T21:12:33.541+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /css/style.css
+2026-10-05T21:12:33.542+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-2] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-10-05T21:12:33.542+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-2] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 24AF4217AD063DD48A17FDC482660AB5
+2026-10-05T21:12:33.542+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /css/style.css
+2026-10-05T21:13:12.989+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:13:12.991+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:13:12.991+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:13:12.992+03:00  INFO 33660 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T21:13:12.992866400 — статистика: NEW=2, IN_PROGRESS=0, DONE=0
+2026-10-05T21:14:12.985+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:14:12.987+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:14:12.988+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:14:12.989+03:00  INFO 33660 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T21:14:12.989535500 — статистика: NEW=2, IN_PROGRESS=0, DONE=0
+2026-10-05T21:14:45.124+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /login
+2026-10-05T21:14:45.126+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-5] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-10-05T21:14:45.126+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-5] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 24AF4217AD063DD48A17FDC482660AB5
+2026-10-05T21:14:45.126+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /login
+2026-10-05T21:14:45.153+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /css/style.css
+2026-10-05T21:14:45.153+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-6] o.s.s.w.a.AnonymousAuthenticationFilter  : Set SecurityContextHolder to anonymous SecurityContext
+2026-10-05T21:14:45.153+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-6] o.s.s.w.session.SessionManagementFilter  : Request requested invalid session id 24AF4217AD063DD48A17FDC482660AB5
+2026-10-05T21:14:45.154+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /css/style.css
+2026-10-05T21:15:12.996+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:15:12.999+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:15:12.999+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:15:13.000+03:00  INFO 33660 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T21:15:13.000241600 — статистика: NEW=2, IN_PROGRESS=0, DONE=0
+2026-10-05T21:15:43.842+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-7] o.s.security.web.FilterChainProxy        : Securing POST /login
+2026-10-05T21:15:43.909+03:00 TRACE 33660 --- [taskmanager] [http-nio-8080-exec-7] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByEmail]: This method is not transactional.
+2026-10-05T21:15:43.978+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-7] o.s.s.a.dao.DaoAuthenticationProvider    : Authenticated user
+2026-10-05T21:15:43.991+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-7] w.c.HttpSessionSecurityContextRepository : Stored SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=com.example.taskmanager.model.User@672a42ed, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=null], Granted Authorities=[ROLE_USER, FactorGrantedAuthority [authority=FACTOR_PASSWORD, issuedAt=2026-10-05T18:15:43.978645Z]]]] to HttpSession [org.apache.catalina.session.StandardSessionFacade@69eef549]
+2026-10-05T21:15:43.991+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-7] w.a.UsernamePasswordAuthenticationFilter : Set SecurityContextHolder to UsernamePasswordAuthenticationToken [Principal=com.example.taskmanager.model.User@672a42ed, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=null], Granted Authorities=[ROLE_USER, FactorGrantedAuthority [authority=FACTOR_PASSWORD, issuedAt=2026-10-05T18:15:43.978645Z]]]
+2026-10-05T21:15:43.991+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-7] o.s.s.web.DefaultRedirectStrategy        : Redirecting to /web/tasks
+2026-10-05T21:15:43.995+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Securing GET /web/tasks
+2026-10-05T21:15:43.996+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-8] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=com.example.taskmanager.model.User@672a42ed, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=null], Granted Authorities=[ROLE_USER, FactorGrantedAuthority [authority=FACTOR_PASSWORD, issuedAt=2026-10-05T18:15:43.978645Z]]]]
+2026-10-05T21:15:43.997+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-8] o.s.security.web.FilterChainProxy        : Secured GET /web/tasks
+2026-10-05T21:15:44.011+03:00 TRACE 33660 --- [taskmanager] [http-nio-8080-exec-8] o.s.t.i.TransactionInterceptor           : Getting transaction for [com.example.taskmanager.service.TaskService.getAll]
+2026-10-05T21:15:44.014+03:00  INFO 33660 --- [taskmanager] [http-nio-8080-exec-8] c.e.taskmanager.aspect.LoggingAspect     : → getAll called with args: [null, null]
+2026-10-05T21:15:44.015+03:00 TRACE 33660 --- [taskmanager] [http-nio-8080-exec-8] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByEmail]: This method is not transactional.
+2026-10-05T21:15:44.018+03:00 TRACE 33660 --- [taskmanager] [http-nio-8080-exec-8] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2026-10-05T21:15:44.032+03:00 TRACE 33660 --- [taskmanager] [http-nio-8080-exec-8] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAll]
+2026-10-05T21:15:44.033+03:00  INFO 33660 --- [taskmanager] [http-nio-8080-exec-8] c.e.taskmanager.aspect.LoggingAspect     : ← getAll finished
+2026-10-05T21:15:44.033+03:00  INFO 33660 --- [taskmanager] [http-nio-8080-exec-8] c.e.taskmanager.aspect.LoggingAspect     : ⏱ getAll completed in 21ms
+2026-10-05T21:15:44.034+03:00 TRACE 33660 --- [taskmanager] [http-nio-8080-exec-8] o.s.t.i.TransactionInterceptor           : Completing transaction for [com.example.taskmanager.service.TaskService.getAll]
+2026-10-05T21:15:44.035+03:00 TRACE 33660 --- [taskmanager] [http-nio-8080-exec-8] o.s.t.i.TransactionInterceptor           : Getting transaction for [com.example.taskmanager.service.TaskService.getStats]
+2026-10-05T21:15:44.035+03:00  INFO 33660 --- [taskmanager] [http-nio-8080-exec-8] c.e.taskmanager.aspect.LoggingAspect     : → getStats called with args: []
+2026-10-05T21:15:44.035+03:00 TRACE 33660 --- [taskmanager] [http-nio-8080-exec-8] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByEmail]: This method is not transactional.
+2026-10-05T21:15:44.036+03:00 TRACE 33660 --- [taskmanager] [http-nio-8080-exec-8] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findAllByOwner]: This method is not transactional.
+2026-10-05T21:15:44.039+03:00  INFO 33660 --- [taskmanager] [http-nio-8080-exec-8] c.e.taskmanager.aspect.LoggingAspect     : ← getStats finished
+2026-10-05T21:15:44.040+03:00  INFO 33660 --- [taskmanager] [http-nio-8080-exec-8] c.e.taskmanager.aspect.LoggingAspect     : ⏱ getStats completed in 5ms
+2026-10-05T21:15:44.040+03:00 TRACE 33660 --- [taskmanager] [http-nio-8080-exec-8] o.s.t.i.TransactionInterceptor           : Completing transaction for [com.example.taskmanager.service.TaskService.getStats]
+2026-10-05T21:15:44.170+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Securing GET /css/style.css
+2026-10-05T21:15:44.172+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-9] o.s.security.web.FilterChainProxy        : Secured GET /css/style.css
+2026-10-05T21:15:44.184+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-9] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=com.example.taskmanager.model.User@672a42ed, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=null], Granted Authorities=[ROLE_USER, FactorGrantedAuthority [authority=FACTOR_PASSWORD, issuedAt=2026-10-05T18:15:43.978645Z]]]]
+2026-10-05T21:16:12.989+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:16:12.990+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:16:12.991+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:16:12.992+03:00  INFO 33660 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T21:16:12.992938700 — статистика: NEW=2, IN_PROGRESS=0, DONE=0
+2026-10-05T21:17:12.992+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:17:12.997+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:17:12.999+03:00 TRACE 33660 --- [taskmanager] [scheduling-1] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByStatus]: This method is not transactional.
+2026-10-05T21:17:12.999+03:00  INFO 33660 --- [taskmanager] [scheduling-1] c.e.t.service.ScheduledTaskChecker       : [SCHEDULED] 2026-10-05T21:17:12.999779700 — статистика: NEW=2, IN_PROGRESS=0, DONE=0
+2026-10-05T21:17:37.900+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Securing GET /login
+2026-10-05T21:17:37.902+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-2] o.s.security.web.FilterChainProxy        : Secured GET /login
+2026-10-05T21:17:37.906+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-2] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=com.example.taskmanager.model.User@672a42ed, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=null], Granted Authorities=[ROLE_USER, FactorGrantedAuthority [authority=FACTOR_PASSWORD, issuedAt=2026-10-05T18:15:43.978645Z]]]]
+2026-10-05T21:17:37.931+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Securing GET /css/style.css
+2026-10-05T21:17:37.932+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-3] o.s.security.web.FilterChainProxy        : Secured GET /css/style.css
+2026-10-05T21:17:37.934+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-3] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=com.example.taskmanager.model.User@672a42ed, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=null], Granted Authorities=[ROLE_USER, FactorGrantedAuthority [authority=FACTOR_PASSWORD, issuedAt=2026-10-05T18:15:43.978645Z]]]]
+2026-10-05T21:17:38.659+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Securing GET /login
+2026-10-05T21:17:38.659+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-4] o.s.security.web.FilterChainProxy        : Secured GET /login
+2026-10-05T21:17:38.661+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-4] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=com.example.taskmanager.model.User@672a42ed, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=null], Granted Authorities=[ROLE_USER, FactorGrantedAuthority [authority=FACTOR_PASSWORD, issuedAt=2026-10-05T18:15:43.978645Z]]]]
+2026-10-05T21:17:38.684+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Securing GET /css/style.css
+2026-10-05T21:17:38.684+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-5] o.s.security.web.FilterChainProxy        : Secured GET /css/style.css
+2026-10-05T21:17:38.686+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-5] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=com.example.taskmanager.model.User@672a42ed, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=null], Granted Authorities=[ROLE_USER, FactorGrantedAuthority [authority=FACTOR_PASSWORD, issuedAt=2026-10-05T18:15:43.978645Z]]]]
+2026-10-05T21:17:38.716+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Securing GET /favicon.ico
+2026-10-05T21:17:38.717+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-6] o.s.security.web.FilterChainProxy        : Secured GET /favicon.ico
+2026-10-05T21:17:38.741+03:00 DEBUG 33660 --- [taskmanager] [http-nio-8080-exec-6] w.c.HttpSessionSecurityContextRepository : Retrieved SecurityContextImpl [Authentication=UsernamePasswordAuthenticationToken [Principal=com.example.taskmanager.model.User@672a42ed, Credentials=[PROTECTED], Authenticated=true, Details=WebAuthenticationDetails [RemoteIpAddress=127.0.0.1, SessionId=null], Granted Authorities=[ROLE_USER, FactorGrantedAuthority [authority=FACTOR_PASSWORD, issuedAt=2026-10-05T18:15:43.978645Z]]]]
+2026-10-05T21:17:43.414+03:00  INFO 33660 --- [taskmanager] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-05T21:17:43.434+03:00  INFO 33660 --- [taskmanager] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-05T21:17:43.447+03:00  INFO 33660 --- [taskmanager] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-05T21:17:43.449+03:00  INFO 33660 --- [taskmanager] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-05T21:17:43.451+03:00  INFO 33660 --- [taskmanager] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
