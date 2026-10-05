@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Задача</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+
+<nav th:replace="~{layout :: navbar}"></nav>
+
+<div class="container" style="max-width:600px">
+
+    <div style="margin-bottom:20px">
+        <a th:href="@{/web/tasks}" style="color:#718096;text-decoration:none;font-size:14px">← К списку</a>
+    </div>
+
+    <div class="card">
+        <h1 th:text="${task.title}" style="margin-bottom:20px"></h1>
+
+        <div class="detail-row">
+            <b>ID:</b>
+            <span th:text="${task.id}"></span>
+        </div>
+
+        <div class="detail-row">
+            <b>Описание:</b>
+            <span th:text="${task.description} ?: '—'"></span>
+        </div>
+
+        <div class="detail-row">
+            <b>Приоритет:</b>
+            <span class="badge"
+                  th:classappend="${task.priority.name() == 'HIGH' ? 'badge-high' :
+                                   task.priority.name() == 'MEDIUM' ? 'badge-medium' : 'badge-low'}"
+                  th:text="${task.priority}"></span>
+        </div>
+
+        <div class="detail-row">
+            <b>Статус:</b>
+            <span class="badge"
+                  th:classappend="${task.status.name() == 'NEW' ? 'badge-new' :
+                                   task.status.name() == 'IN_PROGRESS' ? 'badge-progress' : 'badge-done'}"
+                  th:text="${task.status}"></span>
+        </div>
+
+        <div style="margin-top:24px">
+            <a th:href="@{/web/tasks/{id}/edit(id=${task.id})}" class="btn btn-primary">Изменить</a>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>

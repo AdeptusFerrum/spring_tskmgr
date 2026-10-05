@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+<nav th:fragment="navbar" class="navbar">
+    <a th:href="@{/web/tasks}">📋 Задачи</a>
+    <a th:href="@{/web/tasks/new}">+ Новая</a>
+    <span class="spacer"></span>
+    <span class="user">
+        👤 <span sec:authentication="name">guest</span>
+    </span>
+    <form th:action="@{/logout}" method="post" style="display:inline;margin:0">
+        <button type="submit" class="btn btn-secondary btn-sm">Выйти</button>
+    </form>
+</nav>
+</body>
+</html>

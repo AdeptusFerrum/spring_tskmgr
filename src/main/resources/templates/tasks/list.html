@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+    <title>Задачи</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+
+<nav th:replace="~{layout :: navbar}"></nav>
+
+<div class="container">
+
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+        <h1 style="margin:0">Задачи</h1>
+        <a th:href="@{/web/tasks/new}" class="btn btn-primary">+ Создать задачу</a>
+    </div>
+
+    <div th:if="${#lists.isEmpty(tasks)}" class="empty">
+        <p style="font-size:18px;margin-bottom:16px">Список пуст</p>
+        <a th:href="@{/web/tasks/new}" class="btn btn-primary">Создать первую задачу</a>
+    </div>
+
+    <table th:unless="${#lists.isEmpty(tasks)}">
+        <thead>
+        <tr>
+            <th style="width:60px">ID</th>
+            <th>Название</th>
+            <th style="width:120px">Приоритет</th>
+            <th style="width:140px">Статус</th>
+            <th style="width:180px">Действия</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="task : ${tasks}">
+            <td th:text="${task.id}" style="color:#718096"></td>
+            <td>
+                <a th:href="@{/web/tasks/{id}(id=${task.id})}"
+                   th:text="${task.title}"
+                   style="color:#2d3748;text-decoration:none;font-weight:500"></a>
+            </td>
+            <td>
+                <span class="badge"
+                      th:classappend="${task.priority.name() == 'HIGH' ? 'badge-high' :
+                                       task.priority.name() == 'MEDIUM' ? 'badge-medium' : 'badge-low'}"
+                      th:text="${task.priority}"></span>
+            </td>
+            <td>
+                <span class="badge"
+                      th:classappend="${task.status.name() == 'NEW' ? 'badge-new' :
+                                       task.status.name() == 'IN_PROGRESS' ? 'badge-progress' : 'badge-done'}"
+                      th:text="${task.status}"></span>
+            </td>
+            <td>
+                <div class="actions">
+                    <a th:href="@{/web/tasks/{id}/edit(id=${task.id})}"
+                       class="btn btn-secondary btn-sm">Изменить</a>
+                    <form sec:authorize="hasRole('ADMIN')"
+                          th:action="@{/web/tasks/{id}/delete(id=${task.id})}"
+                          method="post"
+                          style="display:inline;margin:0"
+                          onsubmit="return confirm('Удалить задачу?')">
+                        <button type="submit" class="btn btn-danger btn-sm">Удалить</button>
+                    </form>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>

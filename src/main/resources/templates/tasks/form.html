@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Задача</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+
+<nav th:replace="~{layout :: navbar}"></nav>
+
+<div class="container" style="max-width:600px">
+
+    <h1 th:text="${taskId != null ? 'Редактирование задачи' : 'Новая задача'}"></h1>
+
+    <div class="card">
+        <form class="task-form"
+              th:action="${taskId != null} ? @{/web/tasks/{id}(id=${taskId})} : @{/web/tasks}"
+              th:object="${taskRequest}"
+              method="post">
+
+            <p>Название
+                <input type="text" th:field="*{title}"/>
+                <span th:if="${#fields.hasErrors('title')}"
+                      th:errors="*{title}" class="field-error"></span>
+            </p>
+
+            <p>Описание
+                <textarea th:field="*{description}" rows="4"></textarea>
+            </p>
+
+            <p>Приоритет
+                <select th:field="*{priority}">
+                    <option th:each="p : ${priorities}" th:value="${p}" th:text="${p}"></option>
+                </select>
+            </p>
+
+            <div style="display:flex;gap:8px;margin-top:8px">
+                <button type="submit" class="btn btn-primary">Сохранить</button>
+                <a th:href="@{/web/tasks}" class="btn btn-secondary">Отмена</a>
+            </div>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>

@@ -36,17 +36,30 @@ public class SecurityConfig {
 
     @Bean
     public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        var authMatcher = PathPatternRequestMatcher.withDefaults().matcher("/api/auth/**");
-        var h2Matcher = PathPatternRequestMatcher.withDefaults().matcher("/h2-console/**");
-        var errorMatcher = PathPatternRequestMatcher.withDefaults().matcher("/error");
+        var authApi = PathPatternRequestMatcher.withDefaults().matcher("/api/auth/**");
+        var h2 = PathPatternRequestMatcher.withDefaults().matcher("/h2-console/**");
+        var error = PathPatternRequestMatcher.withDefaults().matcher("/error");
+        var loginPage = PathPatternRequestMatcher.withDefaults().matcher("/login");
+        var registerPage = PathPatternRequestMatcher.withDefaults().matcher("/register");
+        var staticCss = PathPatternRequestMatcher.withDefaults().matcher("/css/**");
+        var staticJs = PathPatternRequestMatcher.withDefaults().matcher("/js/**");
+        var favicon = PathPatternRequestMatcher.withDefaults().matcher("/favicon.ico");
 
         http
                 .csrf(csrf -> csrf.disable())
-                .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+                .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED))
                 .authorizeHttpRequests(auth -> auth
-                        .requestMatchers(authMatcher, h2Matcher, errorMatcher).permitAll()
+                        .requestMatchers(authApi, h2, error, loginPage, registerPage,
+                                staticCss, staticJs, favicon).permitAll()
+                        .requestMatchers("/web/**").authenticated()
                         .anyRequest().authenticated()
                 )
+                .formLogin(form -> form
+                        .loginPage("/login")
+                        .defaultSuccessUrl("/web/tasks", true)
+                        .permitAll()
+                )
+                .logout(logout -> logout.logoutSuccessUrl("/login?logout"))
                 .exceptionHandling(ex -> ex
                         .authenticationEntryPoint(customAuthEntryPoint)
                         .accessDeniedHandler(customAccessDeniedHandler)
