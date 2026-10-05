@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Журнал действий</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/>
+</head>
+<body>
+
+<nav th:replace="~{layout :: navbar}"></nav>
+
+<div class="container">
+
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:20px">
+        <h1 style="margin:0">Журнал действий</h1>
+        <a th:href="@{/web/tasks}" class="btn btn-secondary">← К задачам</a>
+    </div>
+
+    <div th:if="${#lists.isEmpty(logs)}" class="empty">
+        Записей ещё нет. Создай или измени задачу — появится запись.
+    </div>
+
+    <table th:unless="${#lists.isEmpty(logs)}">
+        <thead>
+        <tr>
+            <th style="width:60px">ID</th>
+            <th style="width:150px">Действие</th>
+            <th style="width:90px">Task ID</th>
+            <th>Детали</th>
+            <th style="width:180px">Дата</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="log : ${logs}">
+            <td th:text="${log.id}"></td>
+            <td>
+                <span class="badge"
+                      th:classappend="${log.action == 'CREATE' ? 'badge-done' :
+                                       log.action == 'DELETE' ? 'badge-high' :
+                                       log.action == 'UPDATE_STATUS' ? 'badge-progress' : 'badge-new'}"
+                      th:text="${log.action}"></span>
+            </td>
+            <td th:text="${log.taskId}"></td>
+            <td th:text="${log.details} ?: '—'" style="font-size:13px"></td>
+            <td th:text="${log.createdAt}" style="font-size:13px"></td>
+        </tr>
+        </tbody>
+    </table>
+
+</div>
+</body>
+</html>

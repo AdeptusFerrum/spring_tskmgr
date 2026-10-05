@@ -31,7 +31,16 @@ public class Task {
     @Column(name = "created_at")
     private LocalDateTime createdAt;
 
+    @ManyToMany(fetch = FetchType.EAGER)
+    @JoinTable(
+            name = "task_tags",
+            joinColumns = @JoinColumn(name = "task_id"),
+            inverseJoinColumns = @JoinColumn(name = "tag_id")
+    )
+    private java.util.Set<Tag> tags = new java.util.HashSet<>();
 
+    public java.util.Set<Tag> getTags() { return tags; }
+    public void setTags(java.util.Set<Tag> tags) { this.tags = tags; }
     public Task() {
     }
 

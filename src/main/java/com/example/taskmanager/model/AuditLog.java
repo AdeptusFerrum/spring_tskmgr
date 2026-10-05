@@ -17,6 +17,9 @@ public class AuditLog {
 
     private Long taskId;
 
+    @Column(length = 500)
+    private String details;
+
     @Column(nullable = false)
     private LocalDateTime createdAt;
 
@@ -30,6 +33,9 @@ public class AuditLog {
 
     public Long getTaskId() { return taskId; }
     public void setTaskId(Long taskId) { this.taskId = taskId; }
+
+    public String getDetails() { return details; }
+    public void setDetails(String details) { this.details = details; }
 
     public LocalDateTime getCreatedAt() { return createdAt; }
     public void setCreatedAt(LocalDateTime createdAt) { this.createdAt = createdAt; }

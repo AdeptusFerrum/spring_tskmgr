@@ -3,8 +3,15 @@
 <head>
     <title>Вход</title>
     <link rel="stylesheet" th:href="@{/css/style.css}"/>
+    <script>
+        if (localStorage.getItem('theme') === 'dark') {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
 </head>
 <body>
+
+<button type="button" onclick="toggleTheme()" class="btn btn-secondary theme-floating" id="theme-btn">🌙</button>
 
 <form class="auth-form" th:action="@{/login}" method="post">
     <h2>Вход в Task Manager</h2>
@@ -24,5 +31,17 @@
     <p class="link">Нет аккаунта? <a th:href="@{/register}">Зарегистрироваться</a></p>
 </form>
 
+<script>
+    function toggleTheme() {
+        const isDark = document.documentElement.classList.toggle('dark');
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        updateThemeButton();
+    }
+    function updateThemeButton() {
+        const btn = document.getElementById('theme-btn');
+        if (btn) btn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
+    }
+    document.addEventListener('DOMContentLoaded', updateThemeButton);
+</script>
 </body>
 </html>

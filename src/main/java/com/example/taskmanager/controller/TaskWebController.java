@@ -3,6 +3,7 @@ package com.example.taskmanager.controller;
 import com.example.taskmanager.dto.TaskRequest;
 import com.example.taskmanager.dto.TaskResponse;
 import com.example.taskmanager.model.Priority;
+import com.example.taskmanager.repository.TagRepository;
 import com.example.taskmanager.service.TaskService;
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
@@ -24,14 +25,50 @@ import java.util.List;
 public class TaskWebController {
 
     private final TaskService taskService;
+    private final TagRepository tagRepository;
 
-    public TaskWebController(TaskService taskService) {
+    public TaskWebController(TaskService taskService, TagRepository tagRepository) {
         this.taskService = taskService;
+        this.tagRepository = tagRepository;
     }
 
     @GetMapping
-    public String list(Model model) {
-        model.addAttribute("tasks", taskService.getAll(null, null));
+    public String list(@RequestParam(required = false) String status,
+                       @RequestParam(required = false) String priority,
+                       @RequestParam(defaultValue = "0") int page,
+                       @RequestParam(defaultValue = "5") int size,
+                       @RequestParam(defaultValue = "id") String sort,
+                       @RequestParam(defaultValue = "asc") String dir,
+                       Model model) {
+
+        List<TaskResponse> all = new ArrayList<>(taskService.getAll(status, priority));
+
+        java.util.Comparator<TaskResponse> comparator = switch (sort) {
+            case "title" -> java.util.Comparator.comparing(TaskResponse::getTitle, String.CASE_INSENSITIVE_ORDER);
+            case "priority" -> java.util.Comparator.comparing(t -> t.getPriority().ordinal());
+            case "status" -> java.util.Comparator.comparing(t -> t.getStatus().ordinal());
+            default -> java.util.Comparator.comparing(TaskResponse::getId);
+        };
+        if ("desc".equals(dir)) comparator = comparator.reversed();
+        all.sort(comparator);
+
+        int total = all.size();
+        int totalPages = (int) Math.ceil((double) total / size);
+        int from = Math.min(page * size, total);
+        int to = Math.min(from + size, total);
+
+        model.addAttribute("tasks", all.subList(from, to));
+        model.addAttribute("stats", taskService.getStats());
+        model.addAttribute("currentStatus", status);
+        model.addAttribute("currentPriority", priority);
+        model.addAttribute("page", page);
+        model.addAttribute("size", size);
+        model.addAttribute("totalPages", totalPages);
+        model.addAttribute("totalElements", total);
+        model.addAttribute("hasPrev", page > 0);
+        model.addAttribute("hasNext", page < totalPages - 1);
+        model.addAttribute("sort", sort);
+        model.addAttribute("dir", dir);
         return "tasks/list";
     }
 
@@ -45,6 +82,7 @@ public class TaskWebController {
     public String newForm(Model model) {
         model.addAttribute("taskRequest", new TaskRequest());
         model.addAttribute("priorities", Priority.values());
+        model.addAttribute("allTags", tagRepository.findAll());
         return "tasks/form";
     }
 
@@ -53,6 +91,7 @@ public class TaskWebController {
                          BindingResult result, Model model) {
         if (result.hasErrors()) {
             model.addAttribute("priorities", Priority.values());
+            model.addAttribute("allTags", tagRepository.findAll());
             return "tasks/form";
         }
         taskService.create(req);
@@ -66,9 +105,11 @@ public class TaskWebController {
         req.setTitle(task.getTitle());
         req.setDescription(task.getDescription());
         req.setPriority(task.getPriority());
+        req.setTags(task.getTags() != null ? new ArrayList<>(task.getTags()) : new ArrayList<>());
         model.addAttribute("taskRequest", req);
         model.addAttribute("taskId", id);
         model.addAttribute("priorities", Priority.values());
+        model.addAttribute("allTags", tagRepository.findAll());
         return "tasks/form";
     }
 
@@ -79,6 +120,7 @@ public class TaskWebController {
         if (result.hasErrors()) {
             model.addAttribute("taskId", id);
             model.addAttribute("priorities", Priority.values());
+            model.addAttribute("allTags", tagRepository.findAll());
             return "tasks/form";
         }
         taskService.update(id, req);
@@ -97,7 +139,25 @@ public class TaskWebController {
         return "redirect:/web/tasks";
     }
 
-    // === ИМПОРТ CSV ===
+    @PostMapping("/bulk-delete")
+    public String bulkDelete(@RequestParam(value = "ids", required = false) List<Long> ids,
+                             RedirectAttributes redirectAttributes) {
+        if (ids == null || ids.isEmpty()) {
+            redirectAttributes.addFlashAttribute("error", "Ничего не выбрано");
+            return "redirect:/web/tasks";
+        }
+        int deleted = 0;
+        for (Long id : ids) {
+            try {
+                taskService.delete(id);
+                deleted++;
+            } catch (Exception ignored) {}
+        }
+        redirectAttributes.addFlashAttribute("success",
+                "Удалено задач: " + deleted + " из " + ids.size());
+        return "redirect:/web/tasks";
+    }
+
     @PostMapping("/import")
     public String importCsv(@RequestParam("file") MultipartFile file,
                             RedirectAttributes redirectAttributes) {

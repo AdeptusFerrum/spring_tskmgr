@@ -27,70 +27,169 @@
     <div th:if="${success}" class="alert alert-success" th:text="${success}"></div>
     <div th:if="${error}" class="alert alert-error" th:text="${error}"></div>
 
+    <div class="dashboard">
+        <div class="stat-card stat-total">
+            <div class="stat-value"
+                 th:text="${(stats != null ? stats['NEW'] : 0) + (stats != null ? stats['IN_PROGRESS'] : 0) + (stats != null ? stats['DONE'] : 0)}">0</div>
+            <div class="stat-label">Всего</div>
+        </div>
+        <div class="stat-card stat-new">
+            <div class="stat-value" th:text="${stats != null ? stats['NEW'] : 0}">0</div>
+            <div class="stat-label">NEW</div>
+        </div>
+        <div class="stat-card stat-progress">
+            <div class="stat-value" th:text="${stats != null ? stats['IN_PROGRESS'] : 0}">0</div>
+            <div class="stat-label">IN PROGRESS</div>
+        </div>
+        <div class="stat-card stat-done">
+            <div class="stat-value" th:text="${stats != null ? stats['DONE'] : 0}">0</div>
+            <div class="stat-label">DONE</div>
+        </div>
+    </div>
+
+    <div class="filters">
+        <form method="get" th:action="@{/web/tasks}"
+              style="display:flex;gap:16px;align-items:center;flex-wrap:wrap;margin:0">
+            <label>Статус:
+                <select name="status" onchange="this.form.submit()">
+                    <option value="" th:selected="${currentStatus == null}">— все —</option>
+                    <option value="NEW" th:selected="${currentStatus == 'NEW'}">NEW</option>
+                    <option value="IN_PROGRESS" th:selected="${currentStatus == 'IN_PROGRESS'}">IN_PROGRESS</option>
+                    <option value="DONE" th:selected="${currentStatus == 'DONE'}">DONE</option>
+                </select>
+            </label>
+            <label>Приоритет:
+                <select name="priority" onchange="this.form.submit()">
+                    <option value="" th:selected="${currentPriority == null}">— все —</option>
+                    <option value="HIGH" th:selected="${currentPriority == 'HIGH'}">HIGH</option>
+                    <option value="MEDIUM" th:selected="${currentPriority == 'MEDIUM'}">MEDIUM</option>
+                    <option value="LOW" th:selected="${currentPriority == 'LOW'}">LOW</option>
+                </select>
+            </label>
+            <a th:href="@{/web/tasks}" class="btn btn-secondary btn-sm">Сбросить</a>
+        </form>
+    </div>
+
     <div th:if="${#lists.isEmpty(tasks)}" class="empty">
         <p style="font-size:18px;margin-bottom:16px">Список пуст</p>
         <a th:href="@{/web/tasks/new}" class="btn btn-primary">Создать первую задачу</a>
     </div>
 
-    <table th:unless="${#lists.isEmpty(tasks)}">
-        <thead>
-        <tr>
-            <th style="width:60px">ID</th>
-            <th>Название</th>
-            <th style="width:120px">Приоритет</th>
-            <th style="width:140px">Статус</th>
-            <th style="width:280px">Действия</th>
-        </tr>
-        </thead>
-        <tbody>
-        <tr th:each="task : ${tasks}">
-            <td th:text="${task.id}" style="color:#718096"></td>
-            <td>
-                <a th:href="@{/web/tasks/{id}(id=${task.id})}"
-                   th:text="${task.title}"
-                   style="color:#2d3748;text-decoration:none;font-weight:500"></a>
-            </td>
-            <td>
-                <span class="badge"
-                      th:classappend="${task.priority.name() == 'HIGH' ? 'badge-high' :
-                                       task.priority.name() == 'MEDIUM' ? 'badge-medium' : 'badge-low'}"
-                      th:text="${task.priority}"></span>
-            </td>
-            <td>
-                <span class="badge"
-                      th:classappend="${task.status.name() == 'NEW' ? 'badge-new' :
-                                       task.status.name() == 'IN_PROGRESS' ? 'badge-progress' : 'badge-done'}"
-                      th:text="${task.status}"></span>
-            </td>
-            <td>
-                <div class="actions">
-                    <form th:if="${task.status.name() == 'NEW'}"
-                          th:action="@{/web/tasks/{id}/status(id=${task.id})}"
-                          method="post" style="display:inline;margin:0">
-                        <input type="hidden" name="status" value="IN_PROGRESS"/>
-                        <button type="submit" class="btn btn-secondary btn-sm">▶ В работу</button>
-                    </form>
-                    <form th:if="${task.status.name() != 'DONE'}"
-                          th:action="@{/web/tasks/{id}/status(id=${task.id})}"
-                          method="post" style="display:inline;margin:0">
-                        <input type="hidden" name="status" value="DONE"/>
-                        <button type="submit" class="btn btn-primary btn-sm">✓ DONE</button>
-                    </form>
-                    <a th:href="@{/web/tasks/{id}/edit(id=${task.id})}"
-                       class="btn btn-secondary btn-sm">Изменить</a>
-                    <form sec:authorize="hasRole('ADMIN')"
-                          th:action="@{/web/tasks/{id}/delete(id=${task.id})}"
-                          method="post"
-                          style="display:inline;margin:0"
-                          onsubmit="return confirm('Удалить задачу?')">
-                        <button type="submit" class="btn btn-danger btn-sm">Удалить</button>
-                    </form>
-                </div>
-            </td>
-        </tr>
-        </tbody>
-    </table>
+    <form th:action="@{/web/tasks/bulk-delete}" method="post" id="bulk-form" style="margin:0">
+        <div th:if="${tasks != null and !#lists.isEmpty(tasks)}"
+             style="display:flex;justify-content:flex-end;margin-bottom:8px">
+            <button type="submit" class="btn btn-danger btn-sm"
+                    sec:authorize="hasRole('ADMIN')"
+                    onclick="return confirm('Удалить выбранные задачи?')">
+                🗑 Удалить выбранные
+            </button>
+        </div>
+
+        <table th:unless="${#lists.isEmpty(tasks)}">
+            <thead>
+            <tr>
+                <th style="width:40px">
+                    <input type="checkbox" onclick="toggleAll(this)" title="Выбрать все"/>
+                </th>
+                <th style="width:60px">
+                    <a th:href="@{/web/tasks(sort='id', dir=${sort == 'id' and dir == 'asc' ? 'desc' : 'asc'}, status=${currentStatus}, priority=${currentPriority})}">
+                        ID <span th:if="${sort == 'id'}" th:text="${dir == 'asc' ? '↑' : '↓'}"></span>
+                    </a>
+                </th>
+                <th>
+                    <a th:href="@{/web/tasks(sort='title', dir=${sort == 'title' and dir == 'asc' ? 'desc' : 'asc'}, status=${currentStatus}, priority=${currentPriority})}">
+                        Название <span th:if="${sort == 'title'}" th:text="${dir == 'asc' ? '↑' : '↓'}"></span>
+                    </a>
+                </th>
+                <th style="width:120px">
+                    <a th:href="@{/web/tasks(sort='priority', dir=${sort == 'priority' and dir == 'asc' ? 'desc' : 'asc'}, status=${currentStatus}, priority=${currentPriority})}">
+                        Приоритет <span th:if="${sort == 'priority'}" th:text="${dir == 'asc' ? '↑' : '↓'}"></span>
+                    </a>
+                </th>
+                <th style="width:140px">
+                    <a th:href="@{/web/tasks(sort='status', dir=${sort == 'status' and dir == 'asc' ? 'desc' : 'asc'}, status=${currentStatus}, priority=${currentPriority})}">
+                        Статус <span th:if="${sort == 'status'}" th:text="${dir == 'asc' ? '↑' : '↓'}"></span>
+                    </a>
+                </th>
+                <th style="width:260px">Действия</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr th:each="task : ${tasks}">
+                <td>
+                    <input type="checkbox" name="ids" th:value="${task.id}"/>
+                </td>
+                <td th:text="${task.id}" style="color:#718096"></td>
+                <td>
+                    <a th:href="@{/web/tasks/{id}(id=${task.id})}"
+                       th:text="${task.title}"
+                       class="task-link"></a>
+                </td>
+                <td>
+                    <span class="badge"
+                          th:classappend="${task.priority.name() == 'HIGH' ? 'badge-high' :
+                                           task.priority.name() == 'MEDIUM' ? 'badge-medium' : 'badge-low'}"
+                          th:text="${task.priority}"></span>
+                </td>
+                <td>
+                    <span class="badge"
+                          th:classappend="${task.status.name() == 'NEW' ? 'badge-new' :
+                                           task.status.name() == 'IN_PROGRESS' ? 'badge-progress' : 'badge-done'}"
+                          th:text="${task.status}"></span>
+                </td>
+                <td>
+                    <div class="actions">
+                        <form th:if="${task.status.name() == 'NEW'}"
+                              th:action="@{/web/tasks/{id}/status(id=${task.id})}"
+                              method="post" style="display:inline;margin:0">
+                            <input type="hidden" name="status" value="IN_PROGRESS"/>
+                            <button type="submit" class="btn btn-secondary btn-sm">▶ В работу</button>
+                        </form>
+                        <form th:if="${task.status.name() != 'DONE'}"
+                              th:action="@{/web/tasks/{id}/status(id=${task.id})}"
+                              method="post" style="display:inline;margin:0">
+                            <input type="hidden" name="status" value="DONE"/>
+                            <button type="submit" class="btn btn-primary btn-sm">✓ DONE</button>
+                        </form>
+                        <a th:href="@{/web/tasks/{id}/edit(id=${task.id})}"
+                           class="btn btn-secondary btn-sm">Изменить</a>
+                        <form sec:authorize="hasRole('ADMIN')"
+                              th:action="@{/web/tasks/{id}/delete(id=${task.id})}"
+                              method="post"
+                              style="display:inline;margin:0"
+                              onsubmit="return confirm('Удалить задачу?')">
+                            <button type="submit" class="btn btn-danger btn-sm">Удалить</button>
+                        </form>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+
+    <div th:if="${totalPages > 1}" class="pagination">
+        <a th:if="${hasPrev}"
+           th:href="@{/web/tasks(page=${page - 1}, size=${size}, status=${currentStatus}, priority=${currentPriority}, sort=${sort}, dir=${dir})}"
+           class="btn btn-secondary btn-sm">← Назад</a>
+        <span th:unless="${hasPrev}" class="btn btn-secondary btn-sm disabled">← Назад</span>
+
+        <span class="page-info">
+            Страница <b th:text="${page + 1}"></b> из <b th:text="${totalPages}"></b>
+            (всего <b th:text="${totalElements}"></b>)
+        </span>
+
+        <a th:if="${hasNext}"
+           th:href="@{/web/tasks(page=${page + 1}, size=${size}, status=${currentStatus}, priority=${currentPriority}, sort=${sort}, dir=${dir})}"
+           class="btn btn-secondary btn-sm">Вперёд →</a>
+        <span th:unless="${hasNext}" class="btn btn-secondary btn-sm disabled">Вперёд →</span>
+    </div>
 
 </div>
+
+<script>
+    function toggleAll(source) {
+        document.querySelectorAll('input[name="ids"]').forEach(cb => cb.checked = source.checked);
+    }
+</script>
 </body>
 </html>

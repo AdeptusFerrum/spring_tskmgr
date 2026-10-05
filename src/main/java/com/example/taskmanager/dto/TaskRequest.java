@@ -17,6 +17,11 @@ public class TaskRequest {
     @NotNull(message = "Приоритет обязателен")
     private Priority priority;
 
+    private java.util.List<String> tags;
+
+    public java.util.List<String> getTags() { return tags; }
+    public void setTags(java.util.List<String> tags) { this.tags = tags; }
+
     public String getTitle() { return title; }
     public void setTitle(String title) { this.title = title; }
 
