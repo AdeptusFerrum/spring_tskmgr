@@ -231,3 +231,8 @@ VALUES ('Изучить Flyway', 'Первая миграция', 'HIGH', 'NEW')
 2026-10-05T14:44:53.912+03:00 TRACE 30884 --- [taskmanager] [main] o.s.t.i.TransactionInterceptor           : No need to create transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.findByEmail]: This method is not transactional.
 2026-10-05T14:44:53.974+03:00 TRACE 30884 --- [taskmanager] [main] o.s.t.i.TransactionInterceptor           : Getting transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
 2026-10-05T14:44:53.975+03:00 TRACE 30884 --- [taskmanager] [main] o.s.t.i.TransactionInterceptor           : Completing transaction for [org.springframework.data.jpa.repository.support.SimpleJpaRepository.save]
+2026-10-05T14:58:36.795+03:00  INFO 30884 --- [taskmanager] [SpringApplicationShutdownHook] o.s.boot.tomcat.GracefulShutdown         : Commencing graceful shutdown. Waiting for active requests to complete
+2026-10-05T14:58:36.806+03:00  INFO 30884 --- [taskmanager] [tomcat-shutdown] o.s.boot.tomcat.GracefulShutdown         : Graceful shutdown complete
+2026-10-05T14:58:36.810+03:00  INFO 30884 --- [taskmanager] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-10-05T14:58:36.812+03:00  INFO 30884 --- [taskmanager] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2026-10-05T14:58:36.814+03:00  INFO 30884 --- [taskmanager] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

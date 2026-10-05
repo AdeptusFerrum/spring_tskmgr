@@ -45,12 +45,19 @@ public class SecurityConfig {
         var staticJs = PathPatternRequestMatcher.withDefaults().matcher("/js/**");
         var favicon = PathPatternRequestMatcher.withDefaults().matcher("/favicon.ico");
 
+        // Swagger
+        var swaggerUi = PathPatternRequestMatcher.withDefaults().matcher("/swagger-ui/**");
+        var swaggerUiHtml = PathPatternRequestMatcher.withDefaults().matcher("/swagger-ui.html");
+        var apiDocs = PathPatternRequestMatcher.withDefaults().matcher("/v3/api-docs/**");
+        var apiDocsSwagger = PathPatternRequestMatcher.withDefaults().matcher("/swagger-resources/**");
+
         http
                 .csrf(csrf -> csrf.disable())
                 .sessionManagement(sm -> sm.sessionCreationPolicy(SessionCreationPolicy.IF_REQUIRED))
                 .authorizeHttpRequests(auth -> auth
                         .requestMatchers(authApi, h2, error, loginPage, registerPage,
-                                staticCss, staticJs, favicon).permitAll()
+                                staticCss, staticJs, favicon,
+                                swaggerUi, swaggerUiHtml, apiDocs, apiDocsSwagger).permitAll()
                         .requestMatchers("/web/**").authenticated()
                         .anyRequest().authenticated()
                 )
