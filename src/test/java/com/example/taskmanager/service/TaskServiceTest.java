@@ -8,6 +8,7 @@ import com.example.taskmanager.model.Role;
 import com.example.taskmanager.model.Status;
 import com.example.taskmanager.model.Task;
 import com.example.taskmanager.model.User;
+import com.example.taskmanager.repository.TagRepository;
 import com.example.taskmanager.repository.TaskRepository;
 import com.example.taskmanager.repository.UserRepository;
 import org.junit.jupiter.api.AfterEach;
@@ -28,9 +29,7 @@ import java.util.Optional;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.never;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
 @MockitoSettings(strictness = Strictness.LENIENT)
@@ -39,6 +38,8 @@ class TaskServiceTest {
     @Mock private TaskRepository taskRepository;
     @Mock private UserRepository userRepository;
     @Mock private AuditService auditService;
+    @Mock private AsyncNotificationService notificationService;
+    @Mock private TagRepository tagRepository;
 
     @InjectMocks private TaskService taskService;
 
@@ -75,6 +76,8 @@ class TaskServiceTest {
         SecurityContextHolder.clearContext();
     }
 
+    // ========== GET BY ID ==========
+
     @Test
     void getById_whenExists_shouldReturnTask() {
         when(userRepository.findByEmail("user@test.com")).thenReturn(Optional.of(currentUser));
@@ -86,7 +89,7 @@ class TaskServiceTest {
     }
 
     @Test
-    void getById_whenNotExists_shouldThrowTaskNotFound() {
+    void getById_whenNotExists_shouldThrow() {
         when(userRepository.findByEmail("user@test.com")).thenReturn(Optional.of(currentUser));
         when(taskRepository.findById(999L)).thenReturn(Optional.empty());
 
@@ -94,6 +97,8 @@ class TaskServiceTest {
                 .isInstanceOf(TaskNotFoundException.class)
                 .hasMessageContaining("999");
     }
+
+    // ========== GET ALL ==========
 
     @Test
     void getAll_whenEmpty_shouldReturnEmptyList() {
@@ -111,6 +116,8 @@ class TaskServiceTest {
         assertThat(taskService.getAll(null, null)).hasSize(2);
     }
 
+    // ========== CREATE ==========
+
     @Test
     void create_shouldSaveTaskWithStatusNew() {
         when(userRepository.findByEmail("user@test.com")).thenReturn(Optional.of(currentUser));
@@ -124,8 +131,11 @@ class TaskServiceTest {
 
         assertThat(result.getStatus()).isEqualTo(Status.NEW);
         verify(taskRepository).save(any(Task.class));
-        verify(auditService).logAction("CREATE", 1L);
+        verify(auditService).logAction(eq("CREATE"), eq(1L), anyString());
+        verify(notificationService).sendTaskCreatedNotification(eq(1L), anyString(), eq("user@test.com"));
     }
+
+    // ========== UPDATE ==========
 
     @Test
     void update_whenExists_shouldReturnUpdated() {
@@ -153,6 +163,8 @@ class TaskServiceTest {
                 .isInstanceOf(TaskNotFoundException.class);
     }
 
+    // ========== UPDATE STATUS ==========
+
     @Test
     void updateStatus_whenExists_shouldChangeStatus() {
         when(userRepository.findByEmail("user@test.com")).thenReturn(Optional.of(currentUser));
@@ -162,6 +174,8 @@ class TaskServiceTest {
         assertThat(taskService.updateStatus(1L, Status.DONE).getStatus()).isEqualTo(Status.DONE);
     }
 
+    // ========== DELETE ==========
+
     @Test
     void delete_whenExists_shouldCallRepository() {
         when(userRepository.findByEmail("user@test.com")).thenReturn(Optional.of(currentUser));
@@ -170,7 +184,8 @@ class TaskServiceTest {
         taskService.delete(1L);
 
         verify(taskRepository).deleteById(1L);
-        verify(auditService).logAction("DELETE", 1L);
+        verify(auditService).logAction(eq("DELETE"), eq(1L), anyString());
+        verify(notificationService).sendTaskDeletedNotification(1L);
     }
 
     @Test
@@ -182,15 +197,20 @@ class TaskServiceTest {
                 .isInstanceOf(TaskNotFoundException.class);
     }
 
+    // ========== STATS ==========
+
     @Test
     void getStats_shouldReturnCountByStatus() {
-        when(taskRepository.findByStatus(Status.NEW)).thenReturn(List.of(buildTask(1L, "A"), buildTask(2L, "B")));
-        when(taskRepository.findByStatus(Status.IN_PROGRESS)).thenReturn(List.of());
-        when(taskRepository.findByStatus(Status.DONE)).thenReturn(List.of(buildTask(3L, "C")));
+        when(userRepository.findByEmail("user@test.com")).thenReturn(Optional.of(currentUser));
+        Task t1 = buildTask(1L, "A"); t1.setStatus(Status.NEW);
+        Task t2 = buildTask(2L, "B"); t2.setStatus(Status.NEW);
+        Task t3 = buildTask(3L, "C"); t3.setStatus(Status.DONE);
+        when(taskRepository.findAllByOwner(currentUser)).thenReturn(List.of(t1, t2, t3));
 
         var stats = taskService.getStats();
 
         assertThat(stats.get("NEW")).isEqualTo(2L);
+        assertThat(stats.get("IN_PROGRESS")).isEqualTo(0L);
         assertThat(stats.get("DONE")).isEqualTo(1L);
     }
 }
