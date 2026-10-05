@@ -13,10 +13,14 @@ import org.springframework.security.access.AccessDeniedException;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import com.example.taskmanager.annotation.Loggable;
 
 @Service
 @Transactional
@@ -81,11 +85,22 @@ public class TaskService {
     public Map<String, Long> getStats() {
         Map<String, Long> stats = new LinkedHashMap<>();
         for (Status s : Status.values()) {
-            stats.put(s.name(), taskRepository.findByStatus(s).stream().count());
+            stats.put(s.name(), 0L);
+        }
+        for (Object[] row : taskRepository.countGroupedByStatus()) {
+            Status status = (Status) row[0];
+            Long count = (Long) row[1];
+            stats.put(status.name(), count);
         }
         return stats;
     }
-
+    @Transactional(readOnly = true)
+    public List<TaskResponse> search(String keyword) {
+        return taskRepository.searchByKeyword(keyword).stream()
+                .map(this::toResponse)
+                .toList();
+    }
+    @Loggable
     public TaskResponse create(TaskRequest request) {
         Task task = new Task();
         task.setTitle(request.getTitle());
@@ -113,7 +128,7 @@ public class TaskService {
         task.setStatus(status);
         return toResponse(taskRepository.save(task));
     }
-
+    @Loggable
     public void delete(Long id) {
         Task task = taskRepository.findById(id).orElseThrow(() -> new TaskNotFoundException(id));
         checkOwnership(task);
@@ -137,5 +152,10 @@ public class TaskService {
                 task.getPriority(),
                 task.getStatus()
         );
+    }
+    @Transactional(readOnly = true)
+    public Page<TaskResponse> getAllPaged(int page, int size, String sortBy) {
+        Pageable pageable = PageRequest.of(page, size, Sort.by(sortBy));
+        return taskRepository.findAll(pageable).map(this::toResponse);
     }
 }
