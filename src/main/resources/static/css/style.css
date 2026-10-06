@@ -5,7 +5,7 @@ body {
     background: #f5f7fa;
     color: #2d3748;
     line-height: 1.5;
-    min-height: 100vh;
+    min-height: 100dvh;
 }
 
 .navbar {
@@ -16,6 +16,7 @@ body {
     align-items: center;
     gap: 16px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    flex-wrap: wrap;
 }
 
 .navbar a {
@@ -57,6 +58,7 @@ h2 { font-size: 22px; margin-bottom: 20px; }
     cursor: pointer;
     text-decoration: none;
     transition: all 0.2s;
+    text-align: center;
 }
 
 .btn-primary { background: #3182ce; color: #ffffff; }
@@ -88,6 +90,7 @@ th {
     color: #4a5568;
     text-transform: uppercase;
     letter-spacing: 0.5px;
+    white-space: nowrap;
 }
 
 th a { color: #4a5568; text-decoration: none; }
@@ -108,6 +111,7 @@ tr:hover { background: #f7fafc; }
     border-radius: 12px;
     font-size: 12px;
     font-weight: 600;
+    white-space: nowrap;
 }
 
 .badge-high { background: #fed7d7; color: #c53030; }
@@ -156,7 +160,7 @@ form.auth-form .link a { color: #3182ce; text-decoration: none; }
     color: #718096;
 }
 
-.actions { display: flex; gap: 8px; align-items: center; }
+.actions { display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
 
 form.task-form input[type="text"],
 form.task-form textarea,
@@ -178,18 +182,10 @@ form.task-form p { margin-bottom: 16px; font-size: 14px; color: #4a5568; }
 .detail-row b { color: #4a5568; font-weight: 600; display: inline-block; min-width: 120px; }
 .detail-row span { color: #2d3748; }
 
-.task-link {
-    color: #2d3748;
-    text-decoration: none;
-    font-weight: 500;
-}
+.task-link { color: #2d3748; text-decoration: none; font-weight: 500; }
 .task-link:hover { color: #3182ce; }
 
-.back-link {
-    color: #718096;
-    text-decoration: none;
-    font-size: 14px;
-}
+.back-link { color: #718096; text-decoration: none; font-size: 14px; }
 .back-link:hover { color: #3182ce; }
 
 .dashboard {
@@ -234,6 +230,7 @@ form.task-form p { margin-bottom: 16px; font-size: 14px; color: #4a5568; }
     background: white;
     border-radius: 8px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    flex-wrap: wrap;
 }
 .pagination .page-info { color: #4a5568; font-size: 14px; }
 .pagination .disabled { opacity: 0.4; cursor: not-allowed; pointer-events: none; }
@@ -248,17 +245,25 @@ form.task-form p { margin-bottom: 16px; font-size: 14px; color: #4a5568; }
     box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
-/* ========== ТЁМНАЯ ТЕМА ========== */
-
-html.dark { background: #1a202c; }
-
-html.dark body {
-    background: #1a202c;
-    color: #f7fafc;
+/* Auth-страницы — центрирование без скролла */
+body.auth-page {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding: 20px;
+}
+body.auth-page form.auth-form {
+    margin: 0;
+    width: 100%;
+    max-width: 400px;
 }
 
-html.dark h1,
-html.dark h2 { color: #ffffff; }
+/* ========== ТЁМНАЯ ТЕМА ========== */
+html.dark { background: #1a202c; }
+html.dark body { background: #1a202c; color: #f7fafc; }
+html.dark h1, html.dark h2 { color: #ffffff; }
 
 html.dark .navbar { background: #0d1117; }
 html.dark .navbar a { color: #e2e8f0; }
@@ -280,11 +285,7 @@ html.dark th { background: #1a202c; color: #cbd5e0; }
 html.dark th a { color: #cbd5e0; }
 html.dark th a:hover { color: #63b3ed; }
 
-html.dark td {
-    border-top-color: #4a5568;
-    color: #f7fafc;
-}
-
+html.dark td { border-top-color: #4a5568; color: #f7fafc; }
 html.dark tr:hover { background: #374151; }
 
 html.dark .task-link { color: #f7fafc; }
@@ -295,23 +296,16 @@ html.dark .back-link:hover { color: #63b3ed; }
 
 html.dark .btn-primary { background: #3182ce; color: #ffffff; }
 html.dark .btn-primary:hover { background: #2b6cb0; color: #ffffff; }
-
 html.dark .btn-secondary { background: #4a5568; color: #f7fafc; }
 html.dark .btn-secondary:hover { background: #718096; color: #ffffff; }
-
 html.dark .btn-danger { background: #e53e3e; color: #ffffff; }
 html.dark .btn-danger:hover { background: #c53030; color: #ffffff; }
 
 html.dark .stat-value { color: #ffffff; }
 html.dark .stat-label { color: #cbd5e0; }
-
-html.dark .filters,
-html.dark .filters label { color: #e2e8f0; }
-
+html.dark .filters, html.dark .filters label { color: #e2e8f0; }
 html.dark .pagination .page-info { color: #e2e8f0; }
-
 html.dark form.task-form p { color: #e2e8f0; }
-
 html.dark form.auth-form p { color: #e2e8f0; }
 html.dark form.auth-form .link { color: #cbd5e0; }
 html.dark form.auth-form .link a { color: #63b3ed; }
@@ -326,8 +320,7 @@ html.dark textarea {
     color: #ffffff;
     border-color: #718096;
 }
-html.dark input::placeholder,
-html.dark textarea::placeholder { color: #cbd5e0; }
+html.dark input::placeholder, html.dark textarea::placeholder { color: #cbd5e0; }
 
 html.dark .detail-row { border-bottom-color: #4a5568; }
 html.dark .detail-row b { color: #cbd5e0; }
@@ -335,25 +328,152 @@ html.dark .detail-row span { color: #f7fafc; }
 
 html.dark .alert-success { background: #22543d; color: #9ae6b4; }
 html.dark .alert-error { background: #742a2a; color: #feb2b2; }
-
 html.dark .empty { color: #e2e8f0; }
 
-/* Auth-страницы — центрирование без скролла */
-body.auth-page {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    min-height: 100dvh;
-    padding: 20px;
+/* ========== АДАПТИВ ========== */
+
+@media (max-width: 900px) {
+    .container { padding: 0 16px; margin: 24px auto; }
+    .dashboard { grid-template-columns: repeat(2, 1fr); }
+    .navbar { padding: 12px 16px; gap: 8px; }
+    h1 { font-size: 24px; }
 }
 
-body.auth-page form.auth-form {
-    margin: 0;
-    width: 100%;
-    max-width: 400px;
+@media (max-width: 640px) {
+    body { font-size: 14px; }
+
+    .navbar {
+        padding: 10px 12px;
+        gap: 6px;
+        justify-content: center;
+    }
+    .navbar a { padding: 6px 8px; font-size: 13px; }
+    .navbar .user { font-size: 12px; order: 10; width: 100%; text-align: center; margin-top: 4px; }
+    .navbar .spacer { display: none; }
+
+    .container { padding: 0 12px; margin: 16px auto; }
+    h1 { font-size: 20px; margin-bottom: 14px; }
+    h2 { font-size: 18px; margin-bottom: 14px; }
+
+    .card { padding: 16px; }
+    form.auth-form { padding: 20px; margin: 40px auto; }
+
+    .dashboard { grid-template-columns: repeat(2, 1fr); gap: 8px; }
+    .stat-card { padding: 12px; }
+    .stat-value { font-size: 24px; }
+    .stat-label { font-size: 10px; }
+
+    .filters { padding: 12px; }
+    .filters form { flex-direction: column; align-items: stretch !important; }
+    .filters label { flex-direction: column; align-items: flex-start; gap: 4px; }
+    .filters select { width: 100%; }
+
+    .container > div[style*="justify-content:space-between"] {
+        flex-direction: column;
+        align-items: stretch !important;
+    }
+
+    /* Форма импорта CSV */
+    form[enctype="multipart/form-data"] {
+        width: 100%;
+        flex-direction: column !important;
+        align-items: stretch !important;
+    }
+    form[enctype="multipart/form-data"] input[type="file"] { width: 100%; }
+    form[enctype="multipart/form-data"] .btn { width: 100%; }
+
+    /* ====== ТАБЛИЦА → КАРТОЧКИ ====== */
+    table {
+        display: block;
+        background: transparent;
+        box-shadow: none;
+        border-radius: 0;
+        overflow: visible;
+        white-space: normal;
+    }
+    thead { display: none; }
+    tbody { display: block; }
+
+    tr {
+        display: block;
+        background: white;
+        border-radius: 8px;
+        margin-bottom: 12px;
+        padding: 14px 16px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+        border: none;
+    }
+    tr:hover { background: white; }
+
+    td {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 6px 0;
+        border: none;
+        gap: 12px;
+        text-align: right;
+        white-space: normal;
+    }
+
+    /* Первая td — чекбокс */
+    td:first-child {
+        justify-content: flex-start;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #e2e8f0;
+        margin-bottom: 6px;
+        text-align: left;
+    }
+
+    /* Подписи столбцов */
+    td::before {
+        content: attr(data-label);
+        font-weight: 600;
+        color: #718096;
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        flex-shrink: 0;
+        text-align: left;
+    }
+    td:first-child::before { display: none; }
+
+    /* Действия — отдельный блок снизу */
+    td:last-child {
+        display: block;
+        padding-top: 12px;
+        margin-top: 8px;
+        border-top: 1px solid #e2e8f0;
+        text-align: left;
+    }
+    td:last-child::before { display: none; }
+
+    .actions { display: flex; flex-wrap: wrap; gap: 6px; }
+    .actions form { flex: 1; min-width: 100px; }
+    .actions .btn { width: 100%; }
+
+    /* Пагинация */
+    .pagination { flex-direction: column; gap: 8px; padding: 10px; }
+    .pagination .btn { width: 100%; }
+
+    /* Detail-row */
+    .detail-row b { display: block; min-width: 0; margin-bottom: 4px; }
+
+    /* Кнопка темы */
+    .theme-floating { top: 12px; right: 12px; padding: 6px 10px; font-size: 16px; }
 }
 
-html.dark body.auth-page {
-    background: #1a202c;
+@media (max-width: 400px) {
+    .dashboard { grid-template-columns: 1fr; }
+    .stat-value { font-size: 22px; }
+    .navbar a { padding: 4px 6px; font-size: 12px; }
+}
+
+/* Тёмная тема — карточки на мобильном */
+@media (max-width: 640px) {
+    html.dark tr { background: #2d3748; }
+    html.dark td { border-color: #4a5568; }
+    html.dark td:first-child,
+    html.dark td:last-child { border-color: #4a5568; }
+    html.dark td::before { color: #a0aec0; }
 }

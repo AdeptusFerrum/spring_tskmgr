@@ -13,13 +13,15 @@
 
 <button type="button" onclick="toggleTheme()" class="btn btn-secondary theme-floating" id="theme-btn">🌙</button>
 
-<form class="auth-form" th:action="@{/register}" method="post">
+<form class="auth-form" th:action="@{/register}" method="post" id="register-form">
     <h2>Регистрация</h2>
 
     <div th:if="${error}" class="alert alert-error" th:text="${error}"></div>
 
     <p>Email
-        <input type="email" name="email" required th:value="${email}" autofocus/>
+        <input type="text" name="email" required th:value="${email}" autofocus
+               id="email-input"
+               placeholder="example@test.com"/>
     </p>
     <p>Пароль (минимум 6 символов)
         <input type="password" name="password" required minlength="6"/>
@@ -30,6 +32,19 @@
 </form>
 
 <script>
+    function validateEmail(input) {
+        input.setCustomValidity('');
+        const value = input.value.trim();
+        if (value === '') return;
+
+        // Латиница, цифры + символы, разрешённые в email:
+        // . _ % + - ! # $ & ' * / = ? ^ ` { | } ~
+        const regex = /^[a-zA-Z0-9._%+\-!#$&'*/=?^`{|}~]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}$/;
+        if (!regex.test(value)) {
+            input.setCustomValidity('Email только латиницей, формат: example@test.com');
+        }
+    }
+
     function toggleTheme() {
         const isDark = document.documentElement.classList.toggle('dark');
         localStorage.setItem('theme', isDark ? 'dark' : 'light');
@@ -39,7 +54,36 @@
         const btn = document.getElementById('theme-btn');
         if (btn) btn.textContent = document.documentElement.classList.contains('dark') ? '☀️' : '🌙';
     }
-    document.addEventListener('DOMContentLoaded', updateThemeButton);
+
+    document.addEventListener('DOMContentLoaded', function () {
+        updateThemeButton();
+
+        const email = document.getElementById('email-input');
+        if (email) {
+            // Проверка при уходе из поля
+            email.addEventListener('blur', function () {
+                validateEmail(this);
+            });
+            // Сбрасываем ошибку пока печатает
+            email.addEventListener('input', function () {
+                this.setCustomValidity('');
+            });
+        }
+
+        // Проверка при отправке формы
+        const form = document.getElementById('register-form');
+        if (form) {
+            form.addEventListener('submit', function (e) {
+                if (email) {
+                    validateEmail(email);
+                    if (!email.checkValidity()) {
+                        e.preventDefault();
+                        email.reportValidity();
+                    }
+                }
+            });
+        }
+    });
 </script>
 </body>
 </html>

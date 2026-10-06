@@ -162,50 +162,99 @@ public class TaskWebController {
     public String importCsv(@RequestParam("file") MultipartFile file,
                             RedirectAttributes redirectAttributes) {
         if (file.isEmpty()) {
-            redirectAttributes.addFlashAttribute("error", "Файл пустой");
+            redirectAttributes.addFlashAttribute("error", "Неверный файл");
             return "redirect:/web/tasks";
+        }
+
+        String filename = file.getOriginalFilename();
+        if (filename == null || !filename.toLowerCase().endsWith(".csv")) {
+            redirectAttributes.addFlashAttribute("error", "Неверный файл");
+            return "redirect:/web/tasks";
+        }
+
+        String contentType = file.getContentType();
+        if (contentType != null
+                && !contentType.contains("csv")
+                && !contentType.contains("text")
+                && !contentType.contains("excel")
+                && !contentType.contains("octet-stream")) {
+            redirectAttributes.addFlashAttribute("error", "Неверный файл");
+            return "redirect:/web/tasks";
+        }
+
+        List<String> lines = new ArrayList<>();
+        try (BufferedReader reader = new BufferedReader(
+                new InputStreamReader(file.getInputStream(), StandardCharsets.UTF_8))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                if (!line.isBlank()) lines.add(line);
+            }
+        } catch (IOException e) {
+            redirectAttributes.addFlashAttribute("error", "Неверный файл");
+            return "redirect:/web/tasks";
+        }
+
+        if (lines.isEmpty()) {
+            redirectAttributes.addFlashAttribute("error", "Неверный файл");
+            return "redirect:/web/tasks";
+        }
+
+        String[] header = parseCsvLine(lines.get(0));
+        String[] expected = {"id", "title", "description", "priority", "status"};
+
+        if (header.length != expected.length) {
+            redirectAttributes.addFlashAttribute("error", "Неверный формат CSV");
+            return "redirect:/web/tasks";
+        }
+
+        for (int i = 0; i < expected.length; i++) {
+            String actual = header[i].trim().replace("\"", "").toLowerCase();
+            if (!actual.equals(expected[i])) {
+                redirectAttributes.addFlashAttribute("error", "Неверный формат CSV");
+                return "redirect:/web/tasks";
+            }
+        }
+
+        List<TaskRequest> parsed = new ArrayList<>();
+        for (int i = 1; i < lines.size(); i++) {
+            String[] parts = parseCsvLine(lines.get(i));
+
+            if (parts.length != expected.length) {
+                redirectAttributes.addFlashAttribute("error", "Неверный формат CSV");
+                return "redirect:/web/tasks";
+            }
+
+            String title = parts[1].replace("\"", "").trim();
+            if (title.isBlank()) {
+                redirectAttributes.addFlashAttribute("error", "Неверный формат CSV");
+                return "redirect:/web/tasks";
+            }
+
+            Priority priority;
+            String p = parts[3].replace("\"", "").trim().toUpperCase();
+            if (p.isBlank()) {
+                priority = Priority.MEDIUM;
+            } else if (p.equals("LOW") || p.equals("MEDIUM") || p.equals("HIGH")) {
+                priority = Priority.valueOf(p);
+            } else {
+                redirectAttributes.addFlashAttribute("error", "Неверный формат CSV");
+                return "redirect:/web/tasks";
+            }
+
+            TaskRequest req = new TaskRequest();
+            req.setTitle(title);
+            req.setDescription(parts[2].replace("\"", "").trim());
+            req.setPriority(priority);
+            parsed.add(req);
         }
 
         int created = 0;
-        int failed = 0;
-
-        try (BufferedReader reader = new BufferedReader(
-                new InputStreamReader(file.getInputStream(), StandardCharsets.UTF_8))) {
-
-            String line;
-            boolean firstLine = true;
-
-            while ((line = reader.readLine()) != null) {
-                if (firstLine) { firstLine = false; continue; }
-                if (line.isBlank()) continue;
-
-                try {
-                    String[] parts = parseCsvLine(line);
-                    if (parts.length < 2 || parts[1].isBlank()) {
-                        failed++;
-                        continue;
-                    }
-
-                    TaskRequest req = new TaskRequest();
-                    req.setTitle(parts[1].trim());
-                    req.setDescription(parts.length > 2 ? parts[2].trim() : null);
-                    req.setPriority(parts.length > 3 && !parts[3].isBlank()
-                            ? Priority.valueOf(parts[3].trim().toUpperCase())
-                            : Priority.MEDIUM);
-
-                    taskService.create(req);
-                    created++;
-                } catch (Exception e) {
-                    failed++;
-                }
-            }
-        } catch (IOException e) {
-            redirectAttributes.addFlashAttribute("error", "Ошибка чтения файла: " + e.getMessage());
-            return "redirect:/web/tasks";
+        for (TaskRequest req : parsed) {
+            taskService.create(req);
+            created++;
         }
 
-        redirectAttributes.addFlashAttribute("success",
-                "Импорт завершён. Создано: " + created + ", ошибок: " + failed);
+        redirectAttributes.addFlashAttribute("success", "Импорт завершён. Создано: " + created);
         return "redirect:/web/tasks";
     }
 

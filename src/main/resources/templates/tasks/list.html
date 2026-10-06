@@ -17,6 +17,9 @@
             <form th:action="@{/web/tasks/import}" method="post" enctype="multipart/form-data"
                   style="display:flex;gap:8px;align-items:center;margin:0">
                 <input type="file" name="file" accept=".csv" required
+                       id="csv-input"
+                       onchange="validateCsv(this)"
+                       oninput="this.setCustomValidity('')"
                        style="font-size:13px;padding:4px;border:1px solid #cbd5e0;border-radius:6px"/>
                 <button type="submit" class="btn btn-secondary">📥 Импорт CSV</button>
             </form>
@@ -25,7 +28,6 @@
     </div>
 
     <div th:if="${success}" class="alert alert-success" th:text="${success}"></div>
-    <div th:if="${error}" class="alert alert-error" th:text="${error}"></div>
 
     <div class="dashboard">
         <div class="stat-card stat-total">
@@ -119,25 +121,25 @@
                 <td>
                     <input type="checkbox" name="ids" th:value="${task.id}"/>
                 </td>
-                <td th:text="${task.id}" style="color:#718096"></td>
-                <td>
+                <td data-label="ID" th:text="${task.id}"></td>
+                <td data-label="Название">
                     <a th:href="@{/web/tasks/{id}(id=${task.id})}"
                        th:text="${task.title}"
                        class="task-link"></a>
                 </td>
-                <td>
+                <td data-label="Приоритет">
                     <span class="badge"
                           th:classappend="${task.priority.name() == 'HIGH' ? 'badge-high' :
                                            task.priority.name() == 'MEDIUM' ? 'badge-medium' : 'badge-low'}"
                           th:text="${task.priority}"></span>
                 </td>
-                <td>
+                <td data-label="Статус">
                     <span class="badge"
                           th:classappend="${task.status.name() == 'NEW' ? 'badge-new' :
                                            task.status.name() == 'IN_PROGRESS' ? 'badge-progress' : 'badge-done'}"
                           th:text="${task.status}"></span>
                 </td>
-                <td>
+                <td data-label="Действия">
                     <div class="actions">
                         <form th:if="${task.status.name() == 'NEW'}"
                               th:action="@{/web/tasks/{id}/status(id=${task.id})}"
@@ -186,10 +188,38 @@
 
 </div>
 
-<script>
+<script th:inline="javascript">
+    /*<![CDATA[*/
+    var serverError = /*[[${error}]]*/ null;
+    /*]]>*/
+
     function toggleAll(source) {
         document.querySelectorAll('input[name="ids"]').forEach(cb => cb.checked = source.checked);
     }
+
+    function validateCsv(input) {
+        input.setCustomValidity('');
+        const file = input.files[0];
+        if (!file) return;
+        if (!file.name.toLowerCase().endsWith('.csv')) {
+            input.setCustomValidity('Неверный файл');
+            input.reportValidity();
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        if (serverError) {
+            const input = document.getElementById('csv-input');
+            if (input) {
+                input.setCustomValidity(serverError);
+                input.reportValidity();
+                input.addEventListener('change', function handler() {
+                    input.setCustomValidity('');
+                    input.removeEventListener('change', handler);
+                });
+            }
+        }
+    });
 </script>
 </body>
 </html>
